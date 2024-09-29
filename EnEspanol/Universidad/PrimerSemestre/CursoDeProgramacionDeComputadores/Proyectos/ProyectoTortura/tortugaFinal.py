@@ -1,0 +1,713 @@
+import turtle as t
+import tkinter 
+
+pantalla = tkinter.Tk() # Crea una nueva ventana de tkinter que permite hacer uso de sus metodos para conocer el tamaño de la pantalla
+pantalla.withdraw() # Oculta la ventana de tkinter
+
+x = pantalla.winfo_screenwidth() # Guarda el ancho de la pantalla
+y = pantalla.winfo_screenheight() # Guarda el alto de la pantalla actual
+
+escala = min(x/1400, y/305) # Toma el valor minimo como escala de referencia para asegurarse que el alto del dibujo no supere el alto de la pantalla. Los divisores respectivos se eligieron teniendo en cuenta el tamaño para el que habia sido desarrollado el programa inicialmente.
+
+t.setup(x, y, 0, 0) # Define el tamaño de la pantalla (ancho por alto)
+
+pantalla.destroy() # Cierra definitivamente la ventana de tkinter para que no consuma recursos
+
+t.speed(0) # Define la velocidad de la tortuga como la maxima
+t.bgcolor("black") # Define el color de fondo
+t.color("white") # Define el color del trazo de la tortuga
+t.title("Parcial Turtle Equipo 3")  # Define el titulo del programa
+
+def move(x, y): # Mueve a la tortuga para poder imprimir la siguiente letra teniendo en cuenta la escala
+    x *= escala
+    y *= escala
+    t.setheading(0)
+    t.up()
+    t.goto(x, y)
+    t.down()
+
+def tilde(): # Dibuja la tilde
+    t.begin_fill()
+    for _ in range(3):
+        t.fd(10 * escala)
+        t.lt(63.43)
+        t.fd(11.18 * escala)
+        t.lt(116.57)
+    t.end_fill()
+
+def num_1(): # Dibuja el número 1
+    t.fillcolor('green')
+    t.begin_fill()
+    t.fd(10 * escala)
+    t.lt(90)
+    t.fd(80 * escala)
+    t.lt(90)
+    t.fd(10 * escala)
+    t.lt(55)
+    t.fd(30 * escala)
+    t.lt(125)
+    t.fd(10 * escala)
+    t.lt(55)
+    t.fd(12 * escala)
+    t.lt(215)
+    t.fd(66 * escala)
+    t.end_fill()
+
+def num_5(): # Dibuja el número 5
+    t.fillcolor("green")
+    t.begin_fill()
+    t.lt(90)
+    t.fd(10 * escala)
+    t.rt(90)
+    t.fd(10 * escala)
+    t.circle(20 * escala, 180)
+    t.fd(10 * escala)
+    t.rt(90)
+    t.fd(30 * escala)
+    t.rt(90)
+    t.fd(40 * escala)
+    t.rt(90)
+    t.fd(10 * escala)
+    t.rt(90)
+    t.fd(30 * escala)
+    t.lt(90)
+    t.fd(10 * escala)
+    t.rt(90)
+    t.circle(30 * escala, -180)
+    t.bk(10 * escala)
+    t.end_fill()
+
+def letra_a(): # Dibuja la letra a
+    t.fillcolor("green")
+    t.begin_fill()
+    t.lt(75.96)
+    t.fd(82.46 * escala)
+    t.rt(154.04)
+    t.fd(82.46 * escala)
+    t.rt(104.96)
+    t.fd(10 * escala)
+    t.rt(75.96)
+    t.fd(24.66 * escala)
+    t.lt(78.96)
+    t.fd(8.1 * escala)
+    t.lt(80.96)
+    t.fd(24.66 * escala)
+    t.rt(75.46)
+    t.fd(10 * escala)
+    t.end_fill()
+
+    t.color("white")
+    t.fillcolor("black")
+    t.penup()
+    t.goto(t.xcor() + 17 * escala, t.ycor() + 32 * escala)
+    t.pendown()
+    t.begin_fill()
+    t.setheading(0)
+    t.lt(75.96)
+    t.fd(11.32 * escala)
+    t.rt(155.87)
+    t.fd(11.32 * escala)
+    t.rt(105.56)
+    t.fd(5.89 * escala)
+    t.end_fill()
+
+def letra_b(): # Dibuja la letra b
+    t.fillcolor("green")
+    t.begin_fill()
+    t.lt(90)
+    t.fd(80 * escala)
+    t.rt(90)
+    t.fd(20 * escala)
+    t.setheading(180)
+    t.circle(19.99 * escala, -180)
+    t.setheading(180)
+    t.circle(19.99 * escala, -180)
+    t.bk(20 * escala)
+    t.end_fill()
+
+    t.fillcolor("black")
+    t.penup()
+    t.goto(t.xcor() + 15 * escala, t.ycor() + 10 * escala)
+    t.pendown()
+    t.begin_fill()
+    t.lt(90)
+    t.fd(20 * escala)
+    t.setheading(180)
+    t.circle(10 * escala, -180)
+    t.end_fill()
+
+    t.penup()
+    t.goto(t.xcor(), t.ycor() + 38 * escala)
+    t.pendown()
+    t.begin_fill()
+    t.lt(90)
+    t.fd(20 * escala)
+    t.setheading(180)
+    t.circle(10 * escala, -180)
+    t.end_fill()
+
+def letra_c(): # Dibuja la letra c
+    t.fillcolor("green")
+    t.begin_fill()
+    t.circle(20 * escala, 90)
+    t.fd(10 * escala)
+    t.lt(90)
+    t.fd(10 * escala)
+    t.lt(90)
+    t.fd(10 * escala)
+    t.lt(90)
+    t.rt(90)
+    t.circle(-10 * escala, 180)
+    t.fd(40 * escala)
+    t.circle(-10 * escala, 180)
+    t.fd(10 * escala)
+    t.lt(90)
+    t.fd(10 * escala)
+    t.lt(90)
+    t.fd(10 * escala)
+    t.circle(20 * escala, 180)
+    t.fd(40 * escala)
+    t.circle(20 * escala, 90)
+    t.end_fill()
+
+def letra_d(): # Dibuja la letra d
+    t.fillcolor("green")
+    t.begin_fill()
+    t.lt(90)
+    t.fd(80 * escala)
+    t.setheading(180)
+    t.circle(40 * escala, -180)
+    t.end_fill()
+    t.penup()
+    t.goto(t.xcor() + 10 * escala, t.ycor() + 20 * escala)
+    t.pendown()
+    t.fillcolor("black")
+    t.begin_fill()
+    t.lt(90)
+    t.fd(40 * escala)
+    t.setheading(180)
+    t.circle(20 * escala, -180)
+    t.end_fill()
+
+def letra_e(): # Dibuja la letra e
+    t.fillcolor('green')
+    t.begin_fill()
+    t.fd(40 * escala)  
+    t.lt(90)
+    t.fd(10 * escala)
+    t.lt(90)
+    t.fd(30 * escala)
+    t.lt(-90)
+    t.fd(25 * escala)
+    t.lt(-90)
+    t.fd(30 * escala)
+    t.lt(90)
+    t.fd(10 * escala)
+    t.lt(90)
+    t.fd(30 * escala)
+    t.lt(-90)
+    t.fd(25 * escala)
+    t.lt(-90)
+    t.fd(30 * escala)
+    t.lt(90)
+    t.fd(10 * escala)
+    t.lt(90)
+    t.fd(40 * escala)
+    t.lt(90)
+    t.fd(80 * escala)
+    t.end_fill()
+
+def letra_g(): # Dibuja la letra g
+    t.up()
+    t.fd(20 * escala)
+    t.down()
+    t.fillcolor("green")
+    t.begin_fill()
+    t.circle(20 * escala, 90)
+    t.fd(20 * escala)
+    t.lt(90)
+    t.fd(20 * escala)
+    t.lt(90)
+    t.fd(10 * escala)
+    t.lt(90)
+    t.fd(10 * escala)
+    t.rt(90)
+    t.fd(10 * escala)
+    t.circle(-10 * escala, 180)
+    t.fd(40 * escala)
+    t.circle(-10 * escala, 180)
+    t.fd(10 * escala)
+    t.lt(90)
+    t.fd(10 * escala)
+    t.lt(90)
+    t.fd(10 * escala)
+    t.circle(20 * escala, 180)
+    t.fd(40 * escala)
+    t.circle(20 * escala, 90)
+    t.end_fill()
+
+def letra_i(): # Dibuja la letra i
+    t.fillcolor('green')
+    t.begin_fill()
+    t.fd(40 * escala)
+    t.lt(90)
+    t.fd(10 * escala)
+    t.lt(90)
+    t.fd(15 * escala)
+    t.lt(-90)
+    t.fd(60 * escala)
+    t.lt(-90)
+    t.fd(15 * escala)
+    t.lt(90)
+    t.fd(10 * escala)
+    t.lt(90)
+    t.fd(40 * escala)
+    t.lt(90)
+    t.fd(10 * escala)
+    t.lt(90)
+    t.fd(15 * escala)
+    t.lt(-90)
+    t.fd(60 * escala)
+    t.lt(-90)
+    t.fd(15 * escala)
+    t.lt(90)
+    t.fd(10 * escala)
+    t.end_fill()
+
+def letra_l(): # Dibuja la letra l
+    t.fillcolor('green')
+    t.begin_fill()
+    t.forward(40 * escala)
+    t.lt(90)
+    t.fd(10 * escala)
+    t.lt(90)
+    t.fd(30 * escala)
+    t.left(-90)
+    t.fd(70 * escala)
+    t.lt(90)
+    t.fd(10 * escala)
+    t.lt(90)
+    t.fd(80 * escala)
+    t.end_fill()
+
+def letra_m(): # Dibuja la letra m
+    t.fillcolor("green")
+    t.begin_fill()
+    t.fd(10 * escala)
+    t.lt(90)
+    t.fd(40 * escala)
+    t.rt(165.96)
+    t.fd(20.62 * escala)
+    t.lt(75.96)
+    t.fd(10 * escala)
+    t.lt(75.96)
+    t.fd(20.62 * escala)
+    t.rt(165.96)
+    t.fd(40 * escala)
+    t.lt(90)
+    t.fd(10 * escala)
+    t.lt(90)
+    t.fd(80 * escala)
+    t.lt(90)
+    t.fd(10 * escala)
+    t.lt(75.96)
+    t.fd(41.23 * escala)
+    t.rt(151.93)
+    t.fd(41.23 * escala)
+    t.lt(75.96)
+    t.fd(10 * escala)
+    t.lt(90)
+    t.fd(80 * escala)
+    t.end_fill()
+
+def letra_n(): # Dibuja la letra n
+    t.fillcolor('green')
+    t.begin_fill()
+    t.fd(10 * escala)
+    t.lt(90)
+    t.fd(45 * escala)
+    t.lt(200)
+    t.fd(48 * escala)
+    t.lt(70)
+    t.fd(10 * escala)
+    t.lt(90)
+    t.fd(80 * escala)
+    t.lt(90)
+    t.fd(10 * escala)
+    t.lt(90)
+    t.fd(45 * escala)
+    t.lt(200)
+    t.fd(47 * escala)
+    t.lt(70)
+    t.fd(10 * escala)
+    t.lt(90)
+    t.fd(80 * escala)
+    t.end_fill()
+
+def letra_o(): # Dibuja la letra o
+    t.fillcolor("green")
+    t.up()
+    t.fd(10 * escala)
+    t.lt(90)
+    t.fd(20 * escala)
+    t.down()
+    t.begin_fill()
+    t.fd(40 * escala)
+    t.circle(-10 * escala, 180)
+    t.fd(40 * escala)
+    t.circle(-10 * escala, 180)
+    t.up()
+    t.lt(90)
+    t.fd(10 * escala)
+    t.lt(90)
+    t.down()
+    t.circle(20 * escala, 180)
+    t.fd(40 * escala)
+    t.circle(20 * escala, 180)
+    t.fd(40 * escala)
+    t.end_fill()
+
+def letra_p(): # Dibuja la letra p
+    t.up()
+    t.fd(10 * escala)
+    t.lt(90)
+    t.fd(50 * escala)
+    t.down()
+    t.begin_fill()
+    t.fd(20 * escala)
+    t.rt(90)
+    t.fd(10 * escala)
+    t.circle(-10 * escala, 180)
+    t.fd(10 * escala)
+    t.up()
+    t.fd(10 * escala)
+    t.lt(90)
+    t.down()
+    t.fd(50 * escala)
+    t.lt(90)
+    t.fd(10 * escala)
+    t.lt(90)
+    t.fd(40 * escala)
+    t.rt(90)
+    t.fd(10 * escala)
+    t.circle(20 * escala, 180)
+    t.fd(20 * escala)
+    t.lt(90)
+    t.fd(40 * escala)
+    t.end_fill()
+
+def letra_r(): # Dibuja la letra r
+    t.up()
+    t.fd(10 * escala)
+    t.lt(90)
+    t.fd(50 * escala)
+    t.down()
+    t.begin_fill()
+    t.fd(20 * escala)
+    t.rt(90)
+    t.fd(10 * escala)
+    t.circle(-10 * escala, 180)
+    t.fd(10 * escala)
+    t.up()
+    t.fd(10 * escala)
+    t.lt(90)
+    t.down()
+    t.fd(50 * escala)
+    t.lt(90)
+    t.fd(10 * escala)
+    t.lt(90)
+    t.fd(40 * escala)
+    t.rt(153.43)
+    t.fd(44.72 * escala)
+    t.lt(63.43)
+    t.fd(10 * escala)
+    t.lt(116.57)
+    t.fd(44.72 * escala)
+    t.rt(116.57)
+    t.circle(20 * escala, 180)
+    t.fd(20 * escala)
+    t.lt(90)
+    t.fd(30 * escala)
+    t.end_fill()
+
+def letra_s(): # Dibuja la letra s
+    t.fillcolor("green")
+    t.up()
+    t.right(90)
+    t.back(20 * escala)
+    t.down()
+    t.begin_fill()
+    t.circle(20 * escala, 228.59)
+    t.fd(26.46 * escala)
+    t.circle(-10 * escala, 228.59)
+    t.lt(90)
+    t.fd(10 * escala)
+    t.lt(90)
+    t.circle(20 * escala, 228.59)
+    t.fd(26.46 * escala)
+    t.circle(-10 * escala, 228.59)
+    t.lt(90)
+    t.fd(10 * escala)
+    t.end_fill()
+    t.up()
+
+def letra_t(): # Dibuja la letra t
+    t.fillcolor("green")
+    t.begin_fill()
+    t.fd(40 * escala)
+    t.rt(90)
+    t.fd(10 * escala)
+    t.rt(90)
+    t.fd(15 * escala)
+    t.lt(90)
+    t.fd(70 * escala)
+    t.rt(90)
+    t.fd(10 * escala)
+    t.rt(90)
+    t.fd(70 * escala)
+    t.lt(90)
+    t.fd(15 * escala)
+    t.rt(90)
+    t.fd(10 * escala)
+    t.end_fill()
+
+def letra_u(): # Dibuja la letra u
+    t.up()
+    t.lt(90)
+    t.fd(20 * escala)
+    t.down()
+    t.begin_fill()
+    t.fd(60 * escala)
+    t.rt(90)
+    t.fd(10 * escala)
+    t.rt(90)
+    t.fd(60 * escala)
+    t.circle(10 * escala, 180)
+    t.fd(60 * escala)
+    t.rt(90)
+    t.fd(10 * escala)
+    t.rt(90)
+    t.fd(60 * escala)
+    t.circle(-20 * escala, 180)
+    t.end_fill()
+
+def letra_v(): # Dibuja la letra v
+    t.fillcolor("green")
+    t.begin_fill()
+    t.fd(10 * escala)
+    t.rt(82)
+    t.fd(60 * escala)
+    t.rt(-82)
+    t.fd(5 * escala)
+    t.rt(-82)
+    t.fd(60 * escala)
+    t.rt(90)
+    t.fd(10 * escala)
+    t.rt(90)
+    t.fd(78 * escala)
+    t.rt(82)
+    t.fd(20 * escala)
+    t.rt(82)
+    t.fd(80 * escala)
+    t.end_fill()
+    
+#PRIMERA LINEA
+
+move(-168,47.5)
+letra_g()
+
+move(-126,47.5)
+letra_r()
+
+move(-84,47.5)
+letra_u()
+
+move(-42,47.5)
+letra_p()
+
+move(0,47.5)
+letra_o()
+
+move(110,47.5)
+num_1()
+
+move(126, 47.5)
+num_5()
+
+#SEGUNDA LINEA
+
+move(-588,-47.5)
+letra_p()
+
+move(-546,-47.5)
+letra_r()
+
+move(-504,-47.5)
+letra_o()
+
+move(-462,-47.5)
+letra_g()
+
+move(-420,-47.5)
+letra_r()
+
+move(-378, -47.5)
+letra_a()
+
+move(-336, -47.5)
+letra_m()
+
+move(-294, -47.5)
+letra_a()
+
+move(-232,-47.5)
+letra_c()
+
+move(-208,-47.5)
+letra_i()
+
+move(-166,-47.5)
+letra_o()
+
+move(-150,35)
+tilde()
+
+move(-122,-47.5)
+letra_n()
+
+move(-42, -47.5)
+letra_d()
+
+move(0,-47.5)
+letra_e()
+
+move(102,-47.5)
+letra_c()
+
+move(124,-47.5)
+letra_o()
+
+move(166, -47.5)
+letra_m()
+
+move(208,-47.5)
+letra_p()
+
+move(250,-47.5)
+letra_u()
+
+move(292,32)
+letra_t()
+
+move(334, -47.5)
+letra_a()
+
+move(376, -47.5)
+letra_d()
+
+move(418,-47.5)
+letra_o()
+
+move(460,-47.5)
+letra_r()
+
+move(502,-47.5)
+letra_e()
+
+move(544, -47.5)
+letra_s()
+
+#TERCERA LINEA
+
+move(-672,-142.5)
+letra_u()
+
+move(-628,-143)
+letra_n()
+
+move(-588,-143)
+letra_i() 
+
+move(-546,-62.5)
+letra_v()
+
+move(-504,-143)
+letra_e()
+
+move(-462,-142.5)
+letra_r()
+
+move(-420, -142.5)
+letra_s()
+
+move(-378,-143)
+letra_i()
+
+move(-336, -142.5)
+letra_d()
+
+move(-294,-142.5)
+letra_a()
+
+move(-252, -142.5)
+letra_d()
+
+move(-168,-143)
+letra_n()
+
+move(-126,-142.5)
+letra_a()
+
+move(-64, -142.5)
+letra_c()
+
+move(-42,-143)
+letra_i()
+
+move(0,-142.5)
+letra_o()
+
+move(42,-143)
+letra_n()
+
+move(84, -142.5)
+letra_a()
+
+move(126,-143)
+letra_l()
+
+move(210, -142.5)
+letra_d()
+
+move(252,-143)
+letra_e()
+
+move(356, -142.5)
+letra_c()
+
+move(378,-142.5)
+letra_o()
+
+move(420,-143)
+letra_l()
+
+move(462,-142.5)
+letra_o()
+
+move(504, -142.5)
+letra_m()
+
+move(546, -142.5)
+letra_b()
+
+move(588,-143)
+letra_i()
+
+move(630, -142.5)
+letra_a()
+
+t.up()  # Levanta la tortuga
+t.home() # Mueve a al tortuga al inicio
+t.hideturtle() # Esconde a la tortuga
+
+t.mainloop() # Mantiene el programa abierto hasta que el usuario decida salir
