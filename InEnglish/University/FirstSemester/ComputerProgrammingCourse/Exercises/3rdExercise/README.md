@@ -1,1 +1,1 @@
-.
+Use lineal sot.
