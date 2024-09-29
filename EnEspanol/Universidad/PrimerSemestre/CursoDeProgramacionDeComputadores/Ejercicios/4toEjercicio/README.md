@@ -1,1 +1,2 @@
-.
+- Crea una funcion que haga una sumatoria con todos los numeros de una lista.
+- Crea una funcion que multiplique todos los numeros de una lista.
