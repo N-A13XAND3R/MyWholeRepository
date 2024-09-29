@@ -8,6 +8,6 @@ def lineal_sort(arr):
         arr.append(num)
     print(arr)
 
-lista = [123,214,3,2,22,3,32,-2,0]
+list = [123,214,3,2,22,3,32,-2,0]
 
-lineal_sort(lista)
+lineal_sort(list)
