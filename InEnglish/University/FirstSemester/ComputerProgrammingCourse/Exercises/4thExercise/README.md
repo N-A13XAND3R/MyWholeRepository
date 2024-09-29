@@ -1,2 +1,2 @@
-Create a program to make a summation out of the integers or floats of a given list.
-Create a program to multiply all integers or floats of a given list.
+- Create a program to make a summation out of the integers or floats of a given list.
+- Create a program to multiply all integers or floats of a given list.
