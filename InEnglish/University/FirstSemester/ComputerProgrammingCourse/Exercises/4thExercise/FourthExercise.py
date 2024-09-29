@@ -5,7 +5,6 @@ def Summation(*numbers):
     for i in range (len(*numbers)):
 
         total = listOfNumbers[i] + total
-        print(total)
     return total
 
 #Multiplies all numbers of a given list.
@@ -15,7 +14,6 @@ def Multiplication(*numbers):
     for i in range (len(*numbers)):
 
         total = listOfNumbers[i] * total
-        print(total)
     return total
 
 listOfNumbers = [34,-324,23,-243]
