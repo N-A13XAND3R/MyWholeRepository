@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen 4 | Grecia</title>
+    <link rel="icon" href="../../../LogoPágina.png">
+    <link rel="stylesheet" href="../../Logica y estilos de menús, lecciones y examenes/Estilos/EstilosExamen.css">
+</head>
+<body>
+    <div id="Instrucciones">
+        <h2>Instrucciones y recomendaciones</h2>
+        - Cuando elije <em style="color:rgb(227, 130, 130);">Continuar al examen</em>, si sale sin complentar el examen,
+        su nota es 0. <br>
+        - Es recomendable leer la leccion del nivel antes de entrar a responder el examen,<br>
+        si no lo ha hecho, elija la opcion <em style="color:rgb(227, 130, 130);">Regresar a la lección</em>. <br>
+        - Trate de no usar herramientas virtuales para hacer copia. <br>
+        - Al ingresar las respuestas en el <em style="color:rgb(71, 176, 176)">input</em>, separe la respuesta de cada
+        pregunta <br>
+        con una coma.
+        <div id="BotonesElección">
+            <button class="Boton" id="BotIzq" onclick="Viajar('Leccion')">Regresar a la lección</button>
+            <button class="Boton" id="BotDer" onclick="Eleccion(2, 4)">Continuar al examen</button>
+        </div>
+    </div>
+
+    <div id="Mostrar">
+        <button class="Boton" id="Regresar" onclick="Viajar('Menu')">Volver al menú</button>
+        <div id="ContenedorTitulo">
+            <h1>Cuestionario</h1>
+        </div>
+
+        <div id="Cuestionario">
+            <div class="ContenedorPrgYRes">
+                <div class="Pregunta">
+                    1) ¿Cuál fue la motivación inicial para plantear el
+                    problema de la duplicación del cubo por parte de
+                    los ciudadanos de Atenas?<br><br>
+                    <span class="quad"></span>a.
+                    <i>Duplicar el volumen de un altar utilizado
+                        para sacrificios.</i><br>
+                    <span class="quad"></span>b.
+                    <i>Crear una nueva figura geométrica para la
+                        defensa contra la peste.</i><br>
+                    <span class="quad"></span>c.
+                    <i>Demostrar que las matemáticas matan los
+                        virus</i><br>
+                    <span class="quad"></span>d.
+                    <i>Construir una nueva estructura para albergar
+                        a los ciudadanos afectados por la peste</i><br>
+                </div>
+            </div>
+            <div class="Line"></div>
+
+            <div class="ContenedorPrgYRes">
+                <div class="Pregunta">
+                    2) ¿Qué figura geométrica se utilizó como
+                    base para resolver el problema de la
+                    cuadratura del círculo según la historia
+                    mencionada?<br><br>
+                    <span class="quad"></span>a.
+                    <i>El triángulo equilátero</i><br>
+
+                    <span class="quad"></span>b.
+                    <i>El triángulo escaleno</i><br>
+
+                    <span class="quad"></span>c.
+                    <i>El octágono</i><br>
+
+                    <span class="quad"></span>d.
+                    <i>El cuadrado</i><br>
+                </div>
+            </div>
+            <div class="Line"></div>
+
+            <div class="ContenedorPrgYRes">
+                <div class="Pregunta">
+                    3) ¿Qué innovadora técnica propuso Arquímedes
+                    para trisecar un ángulo?<br><br>
+                    <span class="quad"></span>a.
+                    <i>El teorema de Pitágoras</i><br>
+
+                    <span class="quad"></span>b.
+                    <i>La construcción de triángulos equiláteros</i><br>
+
+                    <span class="quad"></span>c.
+                    <i>La cuadratriz de Hipias</i><br>
+
+                    <span class="quad"></span>d.
+                    <i>La espiral de Arquímedes</i><br>
+
+                </div>
+            </div>
+
+            <div class="Line"></div>
+            <div class="ContenedorPrgYRes">
+                <div class="Pregunta">
+                    4) ¿Cuál es el principal obstáculo para resolver
+                    el problema de la trisección del ángulo con
+                    regla y compás?<br><br>
+                    <span class="quad"></span>a.
+                    <i>La complejidad del proceso
+                        de construcción</i><br>
+
+                    <span class="quad"></span>b.
+                    <i>La falta de precisión en las
+                        mediciones geométricas</i><br>
+
+                    <span class="quad"></span>c.
+                    <i>La irracionalidad de pi</i><br>
+
+                    <span class="quad"></span>d.
+                    <i>La imposibilidad geométrica de dividir
+                        un ángulo en tres partes iguales</i><br>
+                </div>
+            </div>
+            <div class="Line"></div>
+            <div class="ContenedorPrgYRes">
+                <div class="Pregunta">
+                    5) ¿Qué método se utilizó para resolver el
+                    problema de la cuadratura del círculo utilizando
+                    la cuadratriz de Hipias?<br><br>
+                    <span class="quad"></span>a. 
+                    <i>Dividir un segmento en tres partes iguales</i><br>
+
+                    <span class="quad"></span>b. 
+                    <i>Replicar un rectángulo hasta igualar 
+                        el área de un círculo</i><br>
+                    
+                    <span class="quad"></span>c. 
+                    <i>Construir una espiral a partir 
+                        de un ángulo dado</i><br>
+                    
+                    <span class="quad"></span>d. 
+                    <i>No exite un método</i><br>
+                </div>
+            </div>
+        </div>
+
+        <div id="ContenedorPies">
+            <h1 style="margin-left: 35%; font-size: 100%;">Ingreso de respuestas</h1>
+            <input type="text" placeholder="Respuestas aqui" id="IngresoRespuestas">
+            <button class="Boton" id="BotonTerminar" onclick="Revision(respuestas, Nota, 2, 4, 1)">Terminar Examen</button>
+        </div>
+
+
+        <div class="Ayudas">
+            <div id="Info">
+                Al selecionar cualquiera de las siguientes opciones, perderá 0.5 de su nota:
+            </div>
+            <button id="b1" onclick="Mostrar('CT1')">Mostrar ayuda de respuesta de la pregunta 2</button>
+            <button id="b2" onclick="Mostrar('CT2')">Mostrar ayuda respuesta de la pregunta 4</button>
+            <div id="ContendorTexto1">
+                <p>La figura tiene cuatro lados iguales</p>
+            </div>
+            <div id="ContendorTexto2">
+                <p>Usar rectangulos hasta obtner una figura precisa</p>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</body>
+<script src="../../Logica y estilos de menús, lecciones y examenes/Logica/Calificacion.js"></script>
+<script src="Examen.js"></script>
+<script src="../../Logica y estilos de menús, lecciones y examenes/Logica/LogicaLecciones.js"></script>
+
+</html>

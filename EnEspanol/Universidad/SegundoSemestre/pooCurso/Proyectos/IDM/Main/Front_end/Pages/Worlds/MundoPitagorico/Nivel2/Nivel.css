@@ -1,0 +1,53 @@
+#ContenedorTextoCuestionario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 20%;
+}
+#ContenedorTextoCuestionario > div{
+    position: relative;
+    left: 0;
+    top: 0;
+    margin-bottom: 5%;
+}
+
+#ImagenesEjercicios:hover {
+    transform: scale(2.5);
+}
+.Boton1 {
+    padding:0.7rem 0.8rem;
+    height: fit-content;
+    width: fit-content;
+    background:#ffffff;
+    border: 0.1em solid black;
+    border-radius: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin: 1vw;
+    font-size: 1.2vw;
+}
+.Boton1:hover {
+    transform: scale(1.1);
+}
+.Boton {
+    padding:0.7rem 0.8rem;
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    background: #ffffff;
+    border: 0.1em solid black;
+    border-radius: 0.5em;
+    margin: 1vw;
+    font-size: 1vw;
+}

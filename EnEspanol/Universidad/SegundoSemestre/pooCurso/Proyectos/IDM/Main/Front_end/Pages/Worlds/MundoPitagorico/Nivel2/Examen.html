@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen 2| Grecia</title>
+    <link rel="icon" href="../../../LogoPágina.png">
+    <link rel="stylesheet" href="../../Logica y estilos de menús, lecciones y examenes/Estilos/EstilosExamen.css">
+</head>
+
+<body>
+    <div id="Instrucciones">
+        <h2>Instrucciones y recomendaciones</h2>
+        - Cuando elije <em style="color:rgb(227, 130, 130);">Continuar al examen</em>, si sale sin complentar el examen,
+        su nota es 0. <br>
+        - Es recomendable leer la leccion del nivel antes de entrar a responder el examen,<br>
+        si no lo ha hecho, elija la opcion <em style="color:rgb(227, 130, 130);">Regresar a la lección</em>. <br>
+        - Trate de no usar herramientas virtuales para hacer copia. <br>
+        - Al ingresar las respuestas en el <em style="color:rgb(71, 176, 176)">input</em>, separe la respuesta de cada
+        pregunta <br>
+        con una coma.
+        <div id="BotonesElección">
+            <button class="Boton" id="BotIzq" onclick="Viajar('Leccion')">Regresar a la lección</button>
+            <button class="Boton" id="BotDer" onclick="Eleccion(2, 2)">Continuar al examen</button>
+        </div>
+    </div>
+
+    <div id="Mostrar">
+        <button class="Boton" id="Regresar" onclick="Viajar('Menu')">Volver al menú</button>
+        <div id="ContenedorTitulo">
+            <h1>Cuestionario</h1>
+        </div>
+
+        <div id="Cuestionario">
+            <div class="ContenedorPrgYRes">
+                <div class="Pregunta">
+                    1) ¿Quién fue el matemático de la Antigua Grecia conocido 
+                    por su Teorema, que establece la relación entre los lados
+                    de un triángulo rectángulo? <br><br>
+                    <span class="quad"></span>a. <i>Arquímedes</i><br>
+                    <span class="quad"></span>b. <i>Newton</i><br>
+                    <span class="quad"></span>c. <i>Euclides</i><br>
+                    <span class="quad"></span>d. <i>Pitágoras</i><br>
+                </div>
+            </div>
+            <div class="Line"></div>
+
+            <div class="ContenedorPrgYRes">
+                <div class="Pregunta">
+                    2) ¿Cuál fue la contribución matemática de Tales de Mileto
+                    en la geometría?<br><br>
+                    <span class="quad"></span>a. <i>Estimación del valor 
+                        de pi (π)</i><br>
+                    <span class="quad"></span>b. <i>Desarrollo del Teorema
+                        de Tales</i><br>
+                    <span class="quad"></span>c. <i>Invención del tornillo de Arquímedes</i><br>
+                    <span class="quad"></span>d. <i>Demostrar el teorema de 
+                        Pitágoras
+                    </i><br>
+                </div>
+            </div>
+            <div class="Line"></div>
+
+            <div class="ContenedorPrgYRes">
+                <div class="Pregunta">
+                    3) ¿Cuál de los siguientes matemáticos es conocido por su
+                    trabajo en la geometría y la física, incluyendo la
+                    estimación precisa de pi (π)?<br><br>
+                    <span class="quad"></span>a. <i>Euclides</i><br>
+                    <span class="quad"></span>b. <i>Pitágoras</i><br>
+                    <span class="quad"></span>c. <i>Arquímedes</i><br>
+                    <span class="quad"></span>d. <i>Tales</i><br>
+                </div>
+            </div>
+
+            <div class="Line"></div>
+            <div class="ContenedorPrgYRes">
+                <div class="Pregunta">
+                    4) ¿Cuál es la obra maestra de Euclides que presenta
+                    de manera sistemática los principios fundamentales
+                    de la geometría euclidiana?<br><br>
+                    <span class="quad"></span>a. <i>Los Elementos</i><br>
+                    <span class="quad"></span>b. <i>Teoremas de Euclides</i><br>
+                    <span class="quad"></span>c. <i>Fundamentos Geométricos</i><br>
+                    <span class="quad"></span>d. <i>Fundamentos teóricos</i><br>
+                </div>
+            </div>
+            <div class="Line"></div>
+            <div class="ContenedorPrgYRes">
+                <div class="Pregunta">
+                    5) ¿Cuál fue uno de los legados más importantes de
+                    los matemáticos griegos en la antigüedad?<br><br>
+                    <span class="quad"></span>a. <i>Invención del ábaco</i><br>
+                    <span class="quad"></span>b. <i>Desarrollo de la calculadora</i><br>
+                    <span class="quad"></span>c. <i>Establecer las matemáticas
+                        como una ciencia</i><br>
+                    <span class="quad"></span>d. <i>Dar el valor exacto 
+                        de pi (π)</i><br>
+                </div>
+            </div>
+        </div>
+
+        <div id="ContenedorPies">
+            <h1 style="margin-left: 35%; font-size: 100%;">Ingreso de respuestas</h1>
+            <input type="text" placeholder="Respuestas aqui" id="IngresoRespuestas">
+            <button class="Boton" id="BotonTerminar" onclick="Revision(respuestas, Nota, 2, 2)">Terminar Examen</button>
+        </div>
+
+
+        <div class="Ayudas">
+            <div id="Info">
+                Al selecionar cualquiera de las siguientes opciones, perderá 0.25 de su nota:
+            </div>
+            <button id="b1" onclick="Mostrar('CT1')">Mostrar ayuda de respuesta de la pregunta 1</button>
+            <button id="b2" onclick="Mostrar('CT2')">Mostrar ayuda respuesta de la pregunta 2</button>
+            <div id="ContendorTexto1">
+                <p>La inspiración de este proyecto</p>
+            </div>
+            <div id="ContendorTexto2">
+                <p>El teorema lleva su nombre</p>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</body>
+<script src="../../Logica y estilos de menús, lecciones y examenes/Logica/Calificacion.js"></script>
+<script src="Examen.js"></script>
+<script src="../../Logica y estilos de menús, lecciones y examenes/Logica/LogicaLecciones.js"></script>
+
+</html>

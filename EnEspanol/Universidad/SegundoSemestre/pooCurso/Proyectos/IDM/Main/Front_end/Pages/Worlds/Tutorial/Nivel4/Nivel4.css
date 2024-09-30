@@ -1,0 +1,179 @@
+/*Body*/
+body{
+    font-family: sans-serif;
+}
+/*Botones*/
+#ConfirmarFinal {
+    padding:0.3rem 0.4rem;
+    height: fit-content;
+    width: fit-content;
+    top: 5%;
+    left: 60%;
+    position: absolute;
+    background:#ffffff;
+    border-radius: 0.5em;
+    border: 0.1em solid black;
+}
+#Irse {
+    padding:0.3rem 0.4rem;
+    height: fit-content;
+    width: fit-content;
+    top: 10%;
+    left: 60%;
+    position: absolute;
+    background:#ffffff;
+    border-radius: 0.5em;
+    border: 0.1em solid black;
+}
+#ConfirmarFinal:hover, #Irse:hover {
+    transform: scale(1.1);
+}
+/*Declaraciones de plantillas*/
+.Circulo {
+    position: relative;
+    margin-top: 15%;
+    left: 30%;
+    width: 35%;
+    height: 15%;
+    border-radius: 50%;
+    background: rgb(154, 154, 172);
+    border: 0.1EM solid black;
+}
+
+/*Declarando contenedores*/
+#Casa {
+    position: absolute;
+    top: 15%;
+    left: 55%;
+    width: 20vw;
+    height: 45vw;
+}
+#Arriba {
+    position: relative;
+    width: 100%;
+    height: 20%;
+}
+#Centro {
+    position: relative;
+    margin-top: 0;
+    width: 100%;
+    height: 65%;
+}
+/*Fin de declarar contenedores*/
+/*Elementos de Arriba*/
+#Triangulo {
+    width: 60%;
+    height: 100%;
+    background: rgb(117, 117, 117);
+    position: relative;
+    left: 20%;
+    clip-path: polygon(50% 0, 100% 100%, 0 100%);
+}
+/*Elementos del centro*/
+#Rectangulo {
+    position: relative;
+    left: 25%;
+    height: 70%;
+    width: 50%;
+    border: 0.1em solid black;
+    background: rgb(233, 233, 185);
+}
+#Paralelogramo {
+    position: relative;
+    width: 100%;
+    height: 20%;
+}
+#dibujo {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 0.1em solid black;
+    clip-path: polygon(25% 0, 75% 0, 100% 100%, 0 100%);
+    background: rgb(176, 176, 245);
+}
+/*Puerta*/
+#Puerta {
+    position: absolute;
+    bottom: 0%;
+    left: 34%;
+    width: 30%;
+    height: 20%;
+    background-color: lightblue;
+    border-radius: 50% / 100% 100% 0 0;
+    border: 0.1em solid black;
+}
+/*Fin de puerta*/
+/*Objetos movibles*/
+#TrianguloMovible {
+    width: 12vw;
+    height: 9vw;
+    background: rgb(0, 0, 0);
+    position: absolute;
+    left: 5%;
+    top: 60%;
+    clip-path: polygon(50% 0, 100% 100%, 0 100%);
+}
+#RectanguloMovible {
+    width: 10vw;
+    height: 20.475vw;
+    background: rgb(255, 241, 40);
+    position: absolute;
+    left: 5%;
+    top: 15%;
+    border: 0.1em solid black;
+}
+#ParalelogramoMovible {
+    position: absolute;
+    top: 80%;
+    width: 20vw;
+    height: 5.85vw;
+    clip-path: polygon(25% 0, 75% 0, 100% 100%, 0 100%);
+    background: rgb(66, 66, 247);
+}
+#CM1, #CM2, #CM3 {
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    width: 3.5vw;
+    height: 3.07vw;
+    border-radius: 50%;
+    background: rgb(84, 84, 172);
+    border: 0.1em solid black;
+}
+#CM1{
+    top: 5%;
+    left: 3%;
+} 
+#CM2{
+    top: 5%;
+    left: 8%;
+}
+#CM3{
+    top: 5%;
+    left: 13%;
+}
+#PRM {/*Puerta rectangulo movible*/
+    position: absolute;
+    bottom: 0%;
+    left: 34%;
+    width: 3vw;
+    height: 4.095vw;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50% / 100% 100% 0 0;
+    border: 0.1em solid black;
+}
+#PM {/*Puerta movible*/
+    position: absolute;
+    top: 5%;
+    left: 18%;
+    width: 3vw;
+    height: 4.095vw;
+    background-color: rgb(128, 203, 228);
+    border-radius: 50% / 100% 100% 0 0;
+    border: 0.1em solid black;
+}
+/*Necesario para poder poner circulos*/
+#CC1, #CC2, #CC3{
+    background: rgb(255, 255, 255);
+    border: 0.1em solid black;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nivel 2 | Historia</title>
+    <link rel="stylesheet" href="Nivel.css">
+    <link rel="stylesheet" href="../../Logica y estilos de menús, lecciones y examenes/Estilos/EstilosLeccion.css">
+    <link rel="icon" href="../../../../LogoPágina.png">
+</head>
+
+<body>
+
+    <div id="ContenedorBotones">
+        <button onclick="Mover.ModificarRotacion()" class="Boton">Inclinar</button>
+        <button class="Boton" onclick="Viajar('Evaluación')">Ir al examen</button>
+        <button class="Boton" onclick="Viajar('Menu')">Ir al menú</button>
+        <button class="Boton" onclick="Verificar(25, posicionados, 1, 2, 1)">Verificar</button>
+    </div>
+
+
+    <div id="ContendorFila">
+        <div id="Cateto2">
+            <div class="ContenedorCuadrtios">
+                <div class="CuadradoPequeño" onclick="Jugar('C35')" id="C35"></div>
+                <div class="CuadradoPequeño" onclick="Jugar('C36')" id="C36"></div>
+                <div class="CuadradoPequeño" onclick="Jugar('C37')" id="C37"></div>
+                <div class="CuadradoPequeño" onclick="Jugar('C38')" id="C38"></div>
+            </div>
+            <div class="ContenedorCuadrtios">
+                <div class="CuadradoPequeño" onclick="Jugar('C39')" id="C39"></div>
+                <div class="CuadradoPequeño" onclick="Jugar('C40')" id="C40"></div>
+                <div class="CuadradoPequeño" onclick="Jugar('C41')" id="C41"></div>
+                <div class="CuadradoPequeño" onclick="Jugar('C42')" id="C42"></div>
+            </div>
+            <div class="ContenedorCuadrtios">
+                <div class="CuadradoPequeño" onclick="Jugar('C43')" id="C43"></div>
+                <div class="CuadradoPequeño" onclick="Jugar('C44')" id="C44"></div>
+                <div class="CuadradoPequeño" onclick="Jugar('C45')" id="C45"></div>
+                <div class="CuadradoPequeño" onclick="Jugar('C46')" id="C46"></div>
+            </div>
+            <div class="ContenedorCuadrtios">
+                <div class="CuadradoPequeño" onclick="Jugar('C47')" id="C47"></div>
+                <div class="CuadradoPequeño" onclick="Jugar('C48')" id="C48"></div>
+                <div class="CuadradoPequeño" onclick="Jugar('C49')" id="C49"></div>
+                <div class="CuadradoPequeño" onclick="Jugar('C50')" id="C50"></div>
+            </div>
+        </div>
+        <div id="ContenedorColumna">
+            <div id="Triangulo"></div>
+            <div id="Cateto1">
+                <div class="ContenedorCuadrtios">
+                    <div class="CuadradoPequeño" onclick="Jugar('C1')" id="C1"></div><!-- Cuadrado n -->
+                    <div class="CuadradoPequeño" onclick="Jugar('C2')" id="C2"></div>
+                    <div class="CuadradoPequeño" onclick="Jugar('C3')" id="C3"></div>
+                </div>
+                <div class="ContenedorCuadrtios">
+                    <div class="CuadradoPequeño" onclick="Jugar('C4')" id="C4"></div><!-- Cuadrado n -->
+                    <div class="CuadradoPequeño" onclick="Jugar('C5')" id="C5"></div>
+                    <div class="CuadradoPequeño" onclick="Jugar('C6')" id="C6"></div>
+                </div>
+                <div class="ContenedorCuadrtios">
+                    <div class="CuadradoPequeño" onclick="Jugar('C7')" id="C7"></div><!-- Cuadrado n -->
+                    <div class="CuadradoPequeño" onclick="Jugar('C8')" id="C8"></div>
+                    <div class="CuadradoPequeño" onclick="Jugar('C9')" id="C9"></div>
+                </div>
+            </div>
+        </div>
+        <div id="hipotenusa">
+            <div class="ContenedorCuadrtios">
+                <div class="CuadradoPequeño1" id="C10"></div><!-- Cuadrado n -->
+                <div class="CuadradoPequeño1" id="C11"></div>
+                <div class="CuadradoPequeño1" id="C12"></div>
+                <div class="CuadradoPequeño1" id="C13"></div>
+                <div class="CuadradoPequeño1" id="C14"></div>
+            </div>
+            <div class="ContenedorCuadrtios">
+                <!-- Cuadrado n -->
+                <div class="CuadradoPequeño1" id="C15"></div>
+                <div class="CuadradoPequeño1" id="C16"></div>
+                <div class="CuadradoPequeño1" id="C17"></div>
+                <div class="CuadradoPequeño1" id="C18"></div>
+                <div class="CuadradoPequeño1" id="C19"></div>
+            </div>
+            <div class="ContenedorCuadrtios"><!-- Cuadrado n -->
+                <div class="CuadradoPequeño1" id="C20"></div>
+                <div class="CuadradoPequeño1" id="C21"></div>
+                <div class="CuadradoPequeño1" id="C22"></div>
+                <div class="CuadradoPequeño1" id="C23"></div>
+                <div class="CuadradoPequeño1" id="C24"></div>
+            </div>
+            <div class="ContenedorCuadrtios">
+                <div class="CuadradoPequeño1" id="C25"></div>
+                <div class="CuadradoPequeño1" id="C26"></div>
+                <div class="CuadradoPequeño1" id="C27"></div>
+                <div class="CuadradoPequeño1" id="C28"></div>
+                <div class="CuadradoPequeño1" id="C29"></div>
+            </div>
+            <div class="ContenedorCuadrtios">
+                <div class="CuadradoPequeño1" id="C30"></div>
+                <div class="CuadradoPequeño1" id="C31"></div>
+                <div class="CuadradoPequeño1" id="C32"></div>
+                <div class="CuadradoPequeño1" id="C33"></div>
+                <div class="CuadradoPequeño1" id="C34"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ContenedorGift">
+        <img src="../../../../Imagenes/Mundo 1/Nivel 2/Demostración.gif" class="GiftContenedor">
+    </div>
+</body>
+<script src="../../Logica y estilos de menús, lecciones y examenes/Logica/Calificacion.js"></script>
+<script src="../../Logica y estilos de menús, lecciones y examenes/Logica/LogicaLecciones.js"></script>
+<script src="Clases.js"></script>
+<script src="Nivel.js"></script>
+
+</html>

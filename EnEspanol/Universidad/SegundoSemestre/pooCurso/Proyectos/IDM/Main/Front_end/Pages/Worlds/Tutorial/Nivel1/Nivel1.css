@@ -1,0 +1,61 @@
+/*Declaración de elementos básicos de body*/
+body {
+    font-family: sans-serif;
+}
+
+/*Mejora de objetos usados en el documento html*/
+#Contenedor {
+    position: absolute;
+    top: 55%;
+    left: 15%;
+    width: 69vw;
+    height: 7vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+.rectangulo {
+    width: 7vw;
+    height: 7vw;
+    border: 0.1vw solid black;
+    position: relative;
+}
+#Empezar {
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    top: 15%;
+    left: 2%;
+    padding: 0.35rem 0.4rem;
+    background:#ffffff;
+    border-radius: 0.5em;
+    border: 0.1em solid black;
+}
+#BotonPrincipal {
+    padding:0.3rem 0.4rem;
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    top: 25%;
+    left: 2%;
+    background:#ffffff;
+    border-radius: 0.5em;
+    border: 0.1em solid black;
+}
+
+#Terminar {
+    padding:0.3rem 0.4rem;
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    top: 35%;
+    left: 2%;
+    background:#ffffff;
+    border-radius: 0.5em;
+    border: 0.1em solid black;
+}
+#BotonPrincipal:hover, #Empezar:hover, #Terminar:hover {
+    transform: scale(1.1);
+}
+#TextoContador {
+    width: 50%;
+}

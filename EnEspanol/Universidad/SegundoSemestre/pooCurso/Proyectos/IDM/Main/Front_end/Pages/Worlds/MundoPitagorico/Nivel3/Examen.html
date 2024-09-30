@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen 3 | Grecia</title>
+    <link rel="icon" href="../../../LogoPágina.png">
+    <link rel="stylesheet" href="../../Logica y estilos de menús, lecciones y examenes/Estilos/EstilosExamen.css">
+</head>
+
+<body>
+    <div id="Instrucciones">
+        <h2>Instrucciones y recomendaciones</h2>
+        - Cuando elije <em style="color:rgb(227, 130, 130);">Continuar al examen</em>, si sale sin complentar el examen,
+        su nota es 0. <br>
+        - Es recomendable leer la leccion del nivel antes de entrar a responder el examen,<br>
+        si no lo ha hecho, elija la opcion <em style="color:rgb(227, 130, 130);">Regresar a la lección</em>. <br>
+        - Trate de no usar herramientas virtuales para hacer copia. <br>
+        - Al ingresar las respuestas en el <em style="color:rgb(71, 176, 176)">input</em>, separe la respuesta de cada
+        pregunta <br>
+        con una coma.
+        <div id="BotonesElección">
+            <button class="Boton" id="BotIzq" onclick="Viajar('Leccion')">Regresar a la lección</button>
+            <button class="Boton" id="BotDer" onclick="Eleccion(2, 3)">Continuar al examen</button>
+        </div>
+    </div>
+
+    <div id="Mostrar">
+        <button class="Boton" id="Regresar" onclick="Viajar('Menu')">Volver al menú</button>
+        <div id="ContenedorTitulo">
+            <h1>Cuestionario</h1>
+        </div>
+
+        <div id="Cuestionario">
+            <div class="ContenedorPrgYRes">
+                <div class="Pregunta">
+                    1) ¿Cuáles eran las dos variantes principales del
+                    sistema numérico utilizado en la Antigua Grecia?<br><br>
+                    <span class="quad"></span>a. <i>Jónico y egipcio</i><br>
+                    <span class="quad"></span>b. <i>Ático y jónico</i><br>
+                    <span class="quad"></span>c. <i>Ático y romano</i><br>
+                    <span class="quad"></span>d. <i>romano y egipcio</i><br>
+                </div>
+            </div>
+            <div class="Line"></div>
+
+            <div class="ContenedorPrgYRes">
+                <div class="Pregunta">
+                    2) ¿Qué método utilizaba el sistema numérico ático
+                    para representar cantidades grandes de manera
+                    eficiente?<br><br>
+                    <span class="quad"></span>a. <i>Uso exclusivo de letras griegas</i><br>
+                    <span class="quad"></span>b. <i>Utilización de números arábigos</i><br>
+                    <span class="quad"></span>c. <i>Utilización de números Chinos</i><br>
+                    <span class="quad"></span>d. <i>Incorporación de un elemento aditivo</i><br>
+                </div>
+            </div>
+            <div class="Line"></div>
+
+            <div class="ContenedorPrgYRes">
+                <div class="Pregunta">
+                    3) ¿Cuál fue una característica distintiva del sistema
+                    numérico jónico en comparación con el ático?<br><br>
+                    <span class="quad"></span>a. <i>Se basaba en
+                        símbolos acrofónicos</i><br>
+                    <span class="quad"></span>b. <i>Utilizaba exclusivamente
+                        números romanos</i><br>
+                    <span class="quad"></span>c. <i>Asignar valores numéricos 
+                        a las letras del alfabeto griego</i><br>
+                    <span class="quad"></span>d. <i>Ser posicional</i><br>
+                </div>
+            </div>
+
+            <div class="Line"></div>
+            <div class="ContenedorPrgYRes">
+                <div class="Pregunta">
+                    4) ¿Qué ampliación se realizó al alfabeto griego clásico
+                    para permitir al sistema numérico jónico representar
+                    números más grandes?<br><br>
+                    <span class="quad"></span>a. <i>Se incorporaron tres letras
+                        más antiguas y en desuso</i><br>
+                    <span class="quad"></span>b. <i>Se introdujeron
+                         números arábigos</i><br>
+                    <span class="quad"></span>c. <i>Se añadieron letras
+                        latinas</i><br>
+                    <span class="quad"></span>d. <i>No hicieron cambios</i><br>
+                </div>
+            </div>
+            <div class="Line"></div>
+            <div class="ContenedorPrgYRes">
+                <div class="Pregunta">
+                    5) ¿Cuál fue el papel del sistema numérico
+                    griego en la sociedad antigua?<br><br>
+                    <span class="quad"></span>a. <i>Únicamente se utilizaba 
+                        para registros financieros</i><br>
+                    <span class="quad"></span>b. <i>Su importancia se limitaba
+                        al ámbito académico</i><br>
+                    <span class="quad"></span>c. <i>Solo servía de distración 
+                        para los matemáticos</i><br>
+                    <span class="quad"></span>d. <i>Se empleaba en diversos
+                        contextos, incluyendo transacciones comerciales 
+                        y cálculos matemáticos<span class="quad"></span> 
+                        avanzados</i><br>
+                </div>
+            </div>
+        </div>
+
+        <div id="ContenedorPies">
+            <h1 style="margin-left: 35%; font-size: 100%;">Ingreso de respuestas</h1>
+            <input type="text" placeholder="Respuestas aqui" id="IngresoRespuestas">
+            <button class="Boton" id="BotonTerminar" onclick="Revision(respuestas, Nota, 2, 3)">Terminar Examen</button>
+        </div>
+
+
+        <div class="Ayudas">
+            <div id="Info">
+                Al selecionar cualquiera de las siguientes opciones, perderá 0.5:
+            </div>
+            <button id="b1" onclick="Mostrar('CT1')">Mostrar ayuda de respuesta de la pregunta 2</button>
+            <button id="b2" onclick="Mostrar('CT2')">Mostrar ayuda respuesta de la pregunta 4</button>
+            <div id="ContendorTexto1">
+                <p>Incorpora un elemento aditivo</p>
+            </div>
+            <div id="ContendorTexto2">
+                <p>Se incorporaron letras antiguas y en desuso</p>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</body>
+<script src="../../Logica y estilos de menús, lecciones y examenes/Logica/Calificacion.js"></script>
+<script src="Examen.js"></script>
+<script src="../../Logica y estilos de menús, lecciones y examenes/Logica/LogicaLecciones.js"></script>
+
+</html>

@@ -1,0 +1,152 @@
+body {
+    background-image: linear-gradient(rgba(111, 131, 123, 0.6), #667a77), url('../../../Imagenes/Controler/backgroundControler.jpeg');
+    background-position: center;
+    width: 99vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+/* Estilo que aplico cuando se envia un correo */
+body.disabled {
+    pointer-events: none;
+    opacity: 0.2;
+}
+#Titulo {
+    width: 40%;
+    height: 15%;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Menu {
+    position: relative;
+}
+#Menu:hover {
+    transform: scale(1.3);
+}
+.fix {
+    width: 10vw;
+    height: auto;
+}
+
+#ContenedorBotones {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(#566d69, #2a3a37);
+}
+
+#Contenido {
+    width: 80%;
+    height: 40%;
+}
+
+#CurId {
+    display: none;
+}
+
+#BODY, #Notes {
+    width: 80vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#InputSender {
+    margin-top: 5%;
+    width: 80vw;
+    display: none;
+    height: 35vw;
+}
+
+.context {
+    position: relative;
+    width: 80%;
+    height: 70%;
+    font-size: 2em;
+    font-family: sans-serif;
+}
+/* Estilos para crear el progress var */
+@keyframes rellenar {
+    to {
+        stroke-dasharray: 100 100;
+    }
+}
+
+.porcentajes {
+    position: relative;
+    width: 15vw;
+    height: 15vw;
+}
+
+.porcentajes span {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: 1.5vw Verdana;
+}
+
+circle {
+    fill: none;
+    stroke-width: 20;
+    transform: rotate(-90deg);
+    transform-origin: 50%;
+}
+
+circle:nth-child(2) {
+    /* el segundo círculo, es el que se ve por encima del anterior y debe tener el color mas intenso y el area del porcentaje */
+    stroke: var(--color);
+    stroke-dasharray: 0 100;
+    animation: rellenar 2.5s linear infinite;
+}
+
+/* Estilos de las tablas bonitas */
+.table-styleCourses {
+    border-collapse: collapse;
+    margin: 2.5vw 0;
+    font-size: 1em;
+    font-family: sans-serif;
+    width: 20vw;
+    box-shadow: 0 0 1vw rgba(0, 0, 0, 0.425);
+}
+.table-styleCourses thead tr {
+    background-color: #2a3a37;
+    color: #ffffff;
+    text-align: center;
+}
+.table-styleCourses th,
+.table-styleCourses td {
+    padding: 1.2vw 2.5vw;
+    text-align: center;
+}
+
+td {
+    background-color: white;
+}
+.table-styleCourses tbody tr {
+    border-bottom: 0.1vw solid #dddddd;
+}
+.table-styleCourses tbody tr:last-of-type {
+    border-bottom: 0.2vw solid #2a3a37;
+}
+.table-styleCourses tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+/* divs importantes para mejorar la vista de imagenes */
+.showcur {
+    width: 5vw;
+    height: auto;
+}.showcur:hover {
+    transform: scale(1.2);
+}

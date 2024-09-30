@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundos</title>
+    <link rel="stylesheet" href="Logica y estilos de menús, lecciones y examenes/Estilos/EstilosLeccion.css">
+    <link rel="stylesheet" href="EscogerMundo.css">
+    <link rel="icon" href="../../LogoPágina.png" type="image/x-icon">
+</head>
+
+<body>
+    <!--Parte superior de la página-->
+    <div id="nav">
+        <div id="NombrePoo">IMD</div>
+        <div id="NombreSelect">
+            <div id="Nombre"></div>
+            <button class="Boton" id="Span"></button>
+        </div>
+
+    </div>
+
+    <div id="Mostrar">
+        <!--Elección del mundo 1-->
+        <div class="Contend" id="Tuto">
+            <div onclick="Viajar(1)"></div>
+            <p id="TEXT">Tutorial</p>
+        </div>
+
+        <!--Elección del mundo 2-->
+        <div class="Contend">
+            <div onclick="Viajar(2)"></div>
+            <p id="TEXT">Mundo de la historia</p>
+        </div>
+
+        <!--Elección del mundo 3-->
+        <div class="Contend" id="Tuto">
+            <div onclick="Viajar(3)"></div>
+            <p id="TEXT">Mundo Griego/Pitágorico</p>
+        </div>
+    </div>
+
+
+</body>
+<script>
+    let direction = '../Home/Home.html';
+</script>
+<script src="Logica y estilos de menús, lecciones y examenes/Logica/LogicaMenus.js"></script>
+<script src="EscogerMundo.js"></script>
+
+</html>

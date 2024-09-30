@@ -1,0 +1,110 @@
+/*Cuadricula en la que están las L*/
+#Cuadricula {
+    width: 30vh;
+    height: 30.3vh;
+    position: absolute;
+    border: 0.1em solid black;
+    top: 40%;
+    left: 40%;
+}
+
+.L, .LM {
+    position: absolute;
+    width: 15vh;
+    height: 15vh;
+    clip-path: polygon(0 0, 50% 0, 50% 50%, 100% 50%, 100% 100%, 0 100%);
+    background: rgb(161, 161, 161);
+    box-sizing: border-box;
+    border: 0.1em solid black;
+}
+#PrimeraL, #SegundaL{
+    transform: rotate(90deg);
+}
+#SegundaL {
+    right: 0;
+    top: 0;
+}
+#TerceraL {
+    left: 7.5vh;
+    top: 7.7vh;
+}
+#CuartaL {
+    bottom: 0;
+    left: 0vh;
+}
+#QuintaL {
+    transform: rotate(270deg);
+    bottom: 0%;
+    right: 0vh;
+}
+#cuadrado {
+    position: absolute;
+    width: 7.3vh;
+    height: 7.7vh;
+    right: 0.1vh;
+    top: 7.6vh;
+    background: rgb(0, 0, 0);
+}
+
+#Lmov1 {
+    top: 10%;
+    left: 15%;
+    background: blue;
+}
+#Lmov2 {
+    top: 28%;
+    left: 15%;
+    background: blue;
+}
+#Lmov3 {
+    top: 46%;
+    left: 15%;
+    background: greenyellow;
+}
+#Lmov4 {
+    top: 64%;
+    left: 15%;
+    background: greenyellow;
+}
+#Lmov5 {
+    top: 82%;
+    left: 15%;
+    background: rgb(255, 7, 7);
+}
+/*Estilo de botones*/
+#BotonRotar {
+    padding:0.3rem 0.4rem;
+    height: fit-content;
+    width: fit-content;
+    top: 3%;
+    left: 18%;
+    position: absolute;
+    background:#ffffff;
+    border-radius: 0.5em;
+    border: 0.1em solid black;
+}
+#BotonVerificar {
+    padding:0.3rem 0.4rem;
+    height: fit-content;
+    width: fit-content;
+    top: 3%;
+    left: 5%;
+    position: absolute;
+    background:#ffffff;
+    border-radius: 0.5em;
+    border: 0.1em solid black;
+}
+#BotonVolver {
+    padding:0.3rem 0.4rem;
+    height: fit-content;
+    width: fit-content;
+    top: 3%;
+    left: 35%;
+    position: absolute;
+    background:#ffffff;
+    border-radius: 0.5em;
+    border: 0.1em solid black;
+}
+#BotonVerificar:hover, #BotonRotar:hover,#BotonVolver:hover {
+    transform: scale(1.2);
+}

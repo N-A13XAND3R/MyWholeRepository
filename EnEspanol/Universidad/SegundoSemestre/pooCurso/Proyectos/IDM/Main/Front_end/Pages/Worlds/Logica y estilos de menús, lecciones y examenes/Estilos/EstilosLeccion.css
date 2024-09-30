@@ -1,0 +1,119 @@
+body {
+    font-family: sans-serif;
+    font-size: 1.2vw;
+}
+
+
+/* todas las plantillas necesarias para la creación del texto */
+.Boton {
+    padding:0.3rem 0.4rem;
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    background:#ffffff;
+    border: 0.1em solid black;
+    border-radius: 0.5em;
+    margin: 1vw;
+    font-size: 1.2vw;
+}
+.quad {
+    margin-right: 4%;
+}
+.enunciado {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.Parrafo {
+    width: 80%;
+    height: auto;
+}
+.ContenedorImagen {
+    width: 30%;
+    height: auto;
+}
+.Imagen {
+    width: 100%;
+    height: auto;
+}
+.Imagen:hover {
+    transition: all 1s ease-in-out;
+    transform: scale(2.1);
+}
+.TextoPequeño {
+    font-size: 0.9vw;
+    text-align: center;
+}
+.Video {
+    position: relative;
+    width: 45%;
+    height: 15vw;
+    margin-left: 4%;
+    border-radius: 1vw;
+}
+.ContenedorGift {
+    position: absolute;
+    right: 15%;
+    width: 15vw;
+    height: auto;
+}
+.GiftContenedor {
+    width: 100%;
+    height: auto;
+    transform: scaleX(-1);
+}
+/*Configuración de carta de texto*/
+#Texto {
+    position: absolute;
+    left: 25%;
+    top: 3%;
+    width: 45vw;
+    height: auto;
+    border: 0.1em solid black;
+    border-radius: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#Titulo {
+    height: 5vw;
+    width: 100%;
+    text-align: center;
+}
+#Imagenes {
+    margin-top: 3vw;
+    display: flex;
+    justify-content: center;
+}
+
+#ContenedorVideos  {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-bottom: 1%;
+}
+#ContenedorBotones, #ContenedorBotones1 {
+    position: fixed;
+    width:  6vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(84, 109, 132);
+}
+
+/* hovers */
+.Boton:hover {
+    transform: scale(1.1);
+}

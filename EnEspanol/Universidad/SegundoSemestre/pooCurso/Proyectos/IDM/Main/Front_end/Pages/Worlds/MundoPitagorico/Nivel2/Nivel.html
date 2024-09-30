@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto 2 | Mundo Pitágorico</title>
+    <link rel="stylesheet" href="../../Logica y estilos de menús, lecciones y examenes/Estilos/EstilosExamen.css">
+    <link rel="stylesheet" href="../../Logica y estilos de menús, lecciones y examenes/Estilos/EstilosLeccion.css">
+    <link rel="stylesheet" href="Nivel.css">
+</head>
+
+<body>
+    <div id="ContenedorBotones1">
+        <button class="Boton1" onclick="Viajar('Reto')">Ir al reto</button>
+        <button class="Boton1" onclick="Viajar('Evaluación')">Ir a la evaluación</button>
+        <button class="Boton1" onclick="Viajar('Menu')">Volver al menú</button>
+    </div>
+
+
+    <div id="ContenedorTextoCuestionario">
+        <div id="Texto">
+            <div id="Titulo">
+                <h1>Teorema de Tales</h1>
+            </div>
+            <div class="Parrafo">
+                <div class="enunciado">
+                    <i><em>"Considere dos rectas no paralelas, entonces se cortan
+                            en algún punto A. Ahora considere otras dos rectas paralelas
+                            que cortan a las dos rectas no paralelas, entonces tenemos
+                            las relaciones mostradas en la figura 3.2.1"</em></i>
+                </div>
+            </div>
+            <div class="Parrafo" id="Imagenes">
+                <div class="ContenedorImagen">
+                    <img src="../../../Imagenes/Mundo 2/Nivel2/TeoremaTales.jpg" class="Imagen">
+                    <div class="TextoPequeño">Teorema de Tales. <br>
+                        Tomado de
+                        <a href="https://www.lifeder.com/teorema-tales-mileto/">aquí</a>. <br>
+                        Figura 3.2.1.
+                    </div>
+                </div>
+            </div>
+
+            <div id="Titulo">
+                <h3>Aplicaciones</h3>
+            </div>
+            <div class="Parrafo">
+                Este teorema se puede usar para denominar triangulos como "semejantes"
+                o "congruentes" si sus
+                <a href="https://es.wikipedia.org/wiki/%C3%81ngulo_interior">ángulos internos</a> miden igual.
+                El uso de esta denominación está en que podemos deducir los lados de un triangulo
+                si conocemos otro triangulo en el cual conocemos sus lados y sabemos
+                son <i style="color: red">congruentes</i>.
+            </div>
+            <h2 style="text-align: center;">Videos de apoyo</h2>
+            <div id="ContenedorVideos">
+                <iframe src="https://www.youtube.com/embed/eoSvj4BbC7U" frameborder="0" class="Video"></iframe>
+                <iframe src="https://www.youtube.com/embed/XYBOp1uDgAU" frameborder="0" class="Video"></iframe>
+            </div>
+        </div>
+
+
+        <div id="ContenedorTitulo">
+            <h1>Cuestionario</h1>
+        </div>
+        <div id="Cuestionario">
+            <div class="ContenedorPrgYRes">
+                <div class="Pregunta">
+                    1) Usando el teórema de Tales,
+                    señale la respuesta con el valor de b: <br><br>
+
+                    <div class="Parrafo" id="Imagenes">
+                        <div class="ContenedorImagen" id="ImagenesEjercicios">
+                            <img src="../../../Imagenes/Mundo 2/Nivel2/Pregunta1.jpg" class="Imagen">
+                        </div>
+                    </div>
+                    <span class="quad"></span>a. <i>10</i><br>
+                    <span class="quad"></span>b. <i>20</i><br>
+                    <span class="quad"></span>c. <i>3</i><br>
+                    <span class="quad"></span>d. <i>6</i><br>
+                </div>
+            </div>
+            <div class="Line"></div>
+            <div class="ContenedorPrgYRes">
+                <div class="Pregunta">
+                    2) Si un triangulo es rectangulo, y sus
+                    catetos miden 3cm y 4cm
+                    entonces su hipotenuza mide: <br><br>
+                    <span class="quad"></span>a. <i>5cm</i><br>
+                    <span class="quad"></span>b. <i>3cm</i><br>
+                    <span class="quad"></span>c. <i>1cm</i><br>
+                    <span class="quad"></span>d. <i>No tiene medida</i><br>
+                </div>
+            </div>
+
+            <div id="ContenedorPies">
+                <h1 style="margin-left: 35%; font-size: 100%;">Ingreso de respuestas</h1>
+                <input type="text" placeholder="Respuestas aqui" id="IngresoRespuestas">
+                <button class="Boton" id="BotonTerminar" onclick="Verificar(0,0,2,2,2,2,respuestas)">Terminar Reto</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="../../Logica y estilos de menús, lecciones y examenes/Logica/LogicaLecciones.js"></script>
+<script src="../../Logica y estilos de menús, lecciones y examenes/Logica/Calificacion.js"></script>
+<script>
+    let respuestas = ['c', 'a'];
+</script>
+
+</html>

@@ -1,0 +1,139 @@
+/*Estilos de body*/
+body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/*Estidos de objetos del main*/
+/*Contenedor principal*/
+#contenedor {
+    width: 14vw;
+    height: 14vw;
+    margin: 0;
+    position: absolute;
+    top: 35%;
+    left: 40%;
+}
+
+/*Fin de contendor principal*/
+
+/*Objetos del contenedor principal*/
+#cuarto1 {
+    float: left;
+    position: relative;
+    width: 7vw;
+    height: 7vw;
+    border: 0.1vw solid black;
+    border-radius: 100% 0 0 0;
+    box-sizing: border-box;
+}
+
+#cuarto2 {
+    float: left;
+    position: relative;
+    width: 7vw;
+    height: 7vw;
+    border: 0.1vw solid black;
+    border-radius: 0 100% 0 0;
+    box-sizing: border-box;
+}
+
+#cuarto3 {
+    float: left;
+    position: relative;
+    width: 7vw;
+    height: 7vw;
+    border: 0.1vw solid black;
+    border-radius: 0 0 0 100%;
+    box-sizing: border-box;
+}
+
+#cuarto4 {
+    float: left;
+    position: relative;
+    width: 7vw;
+    height: 7vw;
+    border: 0.1vw solid black;
+    border-radius: 0 0 100% 0;
+    box-sizing: border-box;
+}
+
+/*Fin de los objetos del contenedor principal*/
+#MovCuarto1 {
+    position: absolute;
+    width: 7vw;
+    height: 7vw;
+    border: 0.1vw solid black;
+    border-radius: 100% 0 0 0;
+    box-sizing: border-box;
+    top: 10%;
+    left: 15%;
+    background: rgb(156, 236, 162);
+}
+
+#MovCuarto2 {
+    position: absolute;
+    width: 7vw;
+    height: 7vw;
+    border: 0.1vw solid black;
+    border-radius: 0 100% 0 0;
+    box-sizing: border-box;
+    top: 25%;
+    left: 15%;
+    background: rgb(107, 223, 115);
+}
+
+#MovCuarto3 {
+    position: absolute;
+    width: 7vw;
+    height: 7vw;
+    border: 0.1vw solid black;
+    border-radius: 0 0 100% 0;
+    box-sizing: border-box;
+    top: 40%;
+    left: 15%;
+    background: rgb(77, 189, 241);
+}
+
+#MovCuarto4 {
+    position: absolute;
+    width: 7vw;
+    height: 7vw;
+    border: 0.1vw solid black;
+    border-radius: 0 0 0 100%;
+    box-sizing: border-box;
+    top: 55%;
+    left: 15%;
+    background: rgb(155, 105, 248);
+}
+
+#VerificarFin {
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    top: 15%;
+    left: 60%;
+    padding: 0.35rem 0.4rem;
+    background: #ffffff;
+    border-radius: 0.5em;
+    border: 0.1em solid black;
+}
+
+#BotonVolver {
+    padding: 0.2rem 0.3rem;
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    top: 25%;
+    left: 60%;
+    background:#ffffff;
+    border-radius: 0.5em;
+    border: 0.1em solid black;
+}
+
+#BotonVolver:hover,
+#VerificarFin:hover {
+    transform: scale(1.1);
+}

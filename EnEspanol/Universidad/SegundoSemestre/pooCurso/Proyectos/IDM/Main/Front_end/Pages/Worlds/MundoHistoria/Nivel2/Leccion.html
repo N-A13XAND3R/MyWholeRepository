@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 2 | Historia</title>
+    <link rel="icon" href="../../../../LogoPágina.png">
+    <link rel="stylesheet" href="../../Logica y estilos de menús, lecciones y examenes/Estilos/EstilosLeccion.css">
+</head>
+<body>
+
+    <div id="ContenedorBotones">
+        <button class="Boton" onclick="Viajar('Reto')">Ir al reto</button>
+        <button class="Boton" onclick="Viajar('Evaluación')">Ir a la evaluación</button>
+        <button class="Boton" onclick="Viajar('Menu')">Volver al menú</button>
+    </div>
+
+    <div id="Texto">
+        <div id="Titulo">
+            <h1>El teorema de Pitágoras en China</h1>
+        </div>
+
+        <div class="Parrafo">
+            <em>Los escritos Chinos: </em>En los escritos Chinos, este teorema fue parte importante 
+            de los escritos cientificos de la época, además que eran colecciones de problemas en los
+            que se proporcinaba la respuesta y en algunos casos, el cómo se llegó a ella. No se tienen
+            muchos libros de aquella época ya que el emperador <a href="https://es.wikipedia.org/wiki/Qin_Shi_Huang">Shin Huang - ti</a>
+            (divastía Ching) ordenó la destrucción de los libros. <br> <br>
+            Luego, en la dinastía Han los
+            matemáticos tuvieron que reescribir todos los libros detruidos, en el que destacaron 
+            <a href="https://es.wikipedia.org/wiki/Zhoubi_Suanjing">hou bi suan jing</a> (La aritmética clasica del estilo
+            y las partes ciculares del cielo) y el 
+            <a href="https://en.wikipedia.org/wiki/The_Nine_Chapters_on_the_Mathematical_Art">Chiu chang suan shi</a> (Los nueve
+            capitulos sobre el arte de las matemáticas), ambos escritos por Jiu zhang suan shu.
+        </div>
+
+        <div class="Parrafo">
+            <em>Demostraciones:</em> <br><br>
+            <em>Diagrama de la hipotenuza:</em> En el libro hou bi suan jing se enunció este teorema, el cual enuncia: <br> <br>
+            <div class="enunciado">
+                <i><em>"En cada semirectangulo de anchura 3 y longitud 4,
+                    la diagonal debe valer 5, y si se resta del cuadrado total
+                    de área 49 los cuatro semirectángulos exteriores, que suman área
+                    de 24, el resto es un cuadrado de área de 25."</em></i>
+            </div> <br>
+            Aunque es un caso particular, es claro que es un argumento sobre el teorema de pitágoras, lo cual se 
+            evidencia en la figura <em><i>1.1</i></em>. <br>
+        </div>
+        <div class="Parrafo" id="Imagenes">
+            <div class="ContenedorImagen">
+                <img src="../../../../Imagenes/Mundo 1/Nivel 2/Diagrama de la hipotenuza.png" class="Imagen">
+                <div class="TextoPequeño">Diagrama de la hipotenuza de hou bi suan jing. <br>
+                                          Tomado de <a href="https://www.timetoast.com/timelines/historia-del-teorema-de-pitagoras">aqui</a>. <br>
+                                          <em><i>(figura 1.1)</i></em>.
+                </div>
+            </div>
+        </div> 
+        <div class="Parrafo">
+            <br>
+            <em>Visual de Liu Hui:</em> Al final del texto Chiu chang suan shi se presenta que no interesa cómo se dividen los
+            cuadrados, la suma de cada figura de la partición de cada cuadrado es el cuadrado de la hipotenuza, como se muestra
+            en la figura <em><i>1.2</i></em>. <br>
+        </div>
+        <div class="Parrafo" id="Imagenes">
+            <div class="ContenedorImagen">
+                <img src="../../../../Imagenes/Mundo 1/Nivel 2/Liu Hui.jpg" class="Imagen">
+                <div class="TextoPequeño">Prueba visual de Liu Hui. <br>
+                                          <em><i>(figura 1.2)</i></em>.
+                </div>
+            </div>
+        </div>
+
+        <h1>Videos de apoyo</h1>
+        <div id="ContenedorVideos">
+            <iframe src="https://www.youtube.com/embed/wwzcPy702xM" frameborder="0" class="Video"></iframe>
+            <iframe src="https://www.youtube.com/embed/r-21SsKLpFQ" frameborder="0" class="Video"></iframe>
+        </div> 
+    </div>
+</body>
+<script src="../../Logica y estilos de menús, lecciones y examenes/Logica/LogicaLecciones.js"></script>
+</html>

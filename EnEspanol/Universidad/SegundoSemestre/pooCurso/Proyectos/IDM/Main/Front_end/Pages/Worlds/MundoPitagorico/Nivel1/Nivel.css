@@ -1,0 +1,85 @@
+#TextoDemostración {
+    width: 25vw;
+    height: auto;
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    transform: translate(-2%, -2%);
+    text-align: center;
+    text-indent: 2%;
+}
+
+/* inicio de las clases */
+.Cuadrado {
+    position: relative;
+    width: 21vw;
+    height: 21vw;
+    background-color: rgb(236, 236, 109);
+}
+.TrianguloCuadrado1 {
+    width: 12vw;
+    height: 9vw;
+    clip-path: polygon(0 100%, 100% 100%, 100% 0);
+    background: rgb(0, 0, 0);
+    position: absolute;
+}
+.TrianguloCuadrado2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: white;
+}
+#T1 {
+    right: 0;
+    bottom: 0;
+}#T2 {
+    transform: rotate(90deg);
+    bottom: 7.2%;
+    left: -6.6%;
+}#T3 {
+    transform: rotate(180deg);
+}#T4 {
+    transform: rotate(270deg);
+    top: 7%;
+    right: -7.1%;
+}
+/* final de las clases */
+
+#Demostración {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 45vw;
+    height: 25vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#Caja1 {
+    position: absolute;
+    width: 9vw;
+    height: 12vw;
+    right: 0;
+    top: 0;
+}#Caja2 {
+    position: absolute;
+    width: 12vw;
+    height: 9vw;
+    bottom: 0;
+    left: 0;
+}
+#D1 {
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+    background: rgb(192, 116, 116);
+}#D2 {
+    clip-path: polygon(0 0, 0 100%, 100% 100%);
+    background: rgb(149, 100, 195);
+}#D3 {
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+    background: rgb(192, 116, 116);
+}#D4 {
+    clip-path: polygon(0 0, 0 100%, 100% 100%);
+    background: rgb(149, 100, 195);
+}

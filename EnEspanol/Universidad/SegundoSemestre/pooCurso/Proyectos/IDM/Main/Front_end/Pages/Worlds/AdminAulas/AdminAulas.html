@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Aulas</title>
+    <link rel="icon" href="../../../LogoPágina.png">
+    <link rel="stylesheet" href="../Logica y estilos de menús, lecciones y examenes/Estilos/EstilosLeccion.css">
+    <link rel="stylesheet" href="AdminAulas.css">
+</head>
+
+<body>
+    <div id="ContenedorBotones">
+        <div id="Menu" onclick="Viajar('P')">
+            <img src="../../../Imagenes/Controler/home.png" class="fix" alt="return">
+        </div>
+        <div id="Menu" id="Cur" onclick="adminAulas.ShowCur()">
+            <img src="../../../Imagenes/Controler/Mostrar.png" class="fix" alt="return" id="img-show">
+        </div>
+        <div id="Menu" id="CrAula" onclick="adminAulas.CreateClass()">
+            <img src="../../../Imagenes/Controler/CreateAula.png" class="fix" alt="return" id="img-show">
+        </div>
+    </div>
+
+    <div id="Titulo">
+        
+    </div>
+
+    <div id="Contenido">
+
+        <div id="BODY">
+
+        </div>
+
+        <div id="Notes">
+
+        </div>
+
+        <div id="InputSender">
+            <textarea type="text" class="context" placeholder="Escriba el cuerpo del correo"></textarea>
+            <button class="Boton" onclick="adminAulas.SendMail()" id="Mail">Enviar correo</button>
+        </div>
+
+    </div>
+</body>
+<script>
+    let direction = "../../Home/Home.html";
+</script>
+<script src="../Logica y estilos de menús, lecciones y examenes/Logica/LogicaMenus.js"></script>
+<script src="AdminAulas.js"></script>
+<script>
+    const adminAulas = new AdminAulas();
+</script>
+<script src="BuildProgressVar.js"></script>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nivel 3 | Historia</title>
+    <link rel="icon" href="../../../../LogoPágina.png">
+    <link rel="stylesheet" href="../../Logica y estilos de menús, lecciones y examenes/Estilos/EstilosLeccion.css">
+    <link rel="stylesheet" href="Nivel.css">
+</head>
+
+<body>
+    <div id="ContenedorBotones">
+        <button class="Boton" onclick="mover.rotar(rotaciones[nombreId]);">Rotar figura</button>
+        <button class="Boton" onclick="Verificar(5, contador, 1, 2, 3)">Verificar</button>
+        <button class="Boton" onclick="Viajar('Menu')">Volver al menú</button>
+    </div>
+
+    <div id="ContenedorGrande">
+        <div id="Cateto1"><!-- Movimiento n -->
+            <div id="TrianguloRecortado" onclick="CrearObjeto('TrianguloRecortado')"></div>
+            <div id="TrianguloCompleto" onclick="CrearObjeto('TrianguloCompleto')"></div>
+        </div>
+
+        <div id="ContenedorPequeño">
+            <div id="Triangulo"></div>
+            <div id="Cateto2">
+                <div id="PuntaTriangulo" onclick="CrearObjeto('PuntaTriangulo')"></div>
+                <div id="ParalelepidedoQueNoEsparalelepidedo"
+                    onclick="CrearObjeto('ParalelepidedoQueNoEsparalelepidedo')"></div>
+                <div id="TrianguloGrande" onclick="CrearObjeto('TrianguloGrande')"></div>
+            </div>
+        </div>
+        <div id="hipotenuza">
+            <div id="TrianguloCompletoh"></div>
+            <div id="TrianguloGrandeh"></div>
+            <div id="ParalelepidedoQueNoEsparalelepidedoh"></div>
+            <div id="TrianguloRecortadoh"></div>
+            <div id="PuntaTrianguloh"></div>
+        </div>
+    </div>
+
+    <div class="ContenedorGift">
+        <img src="../../../../Imagenes/Mundo 1/Nivel 3/Demostraion.gif" class="GiftContenedor">
+    </div>
+
+</body>
+<script src="../../Logica y estilos de menús, lecciones y examenes/Logica/Calificacion.js"></script>
+<script src="../../Logica y estilos de menús, lecciones y examenes/Logica/LogicaLecciones.js"></script>
+<script src="Mover.js"></script>
+<script src="Nivel.js"></script>
+
+</html>

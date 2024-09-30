@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nivel 1 | Historia</title>
+    <link rel="stylesheet" href="Nivel.css">
+    <link rel="icon" href="../../../../LogoPágina.png">
+</head>
+
+<body>
+
+    <div id="Halcón">
+        <div id="AlaIzquierda">
+            <div class="Paralelepipedo" id="PS"></div><!--Paralelepipedo 1, 2-->
+            <div class="Paralelepipedo" id="PP"></div><!--Paralelepipedo p-->
+            <div class="Paralelepipedo" id="PS"></div>
+            <div class="Paralelepipedo" id="PP"></div>
+        </div>
+        <div id="Cuerpo">
+            <div id="Pi"> <!--Parte izquierda, centro, derecha-->
+                <div class="Semi-trig"></div>
+                <div class="Cuadrado"></div>
+                <div class="Semi-trig" id="SemiInvert"></div>
+                <div class="Triangulo"></div>
+            </div>
+            <div id="Pc">
+                <div id="ContenedorCabeza">
+                    <div class="Paralelepipedo" id="Cn"></div><!--Cabeza normal, invertida-->
+                    <div class="Paralelepipedo" id="Ci"></div>
+                </div>
+                <div class="Casa"></div>
+                <div class="CuadC" id="Primero">
+                    <div class="Triangulo" id="MenorIzqN"></div><!--Menor izquierdo, derecho; negro, blanco-->
+                    <div class="TMayor" id="MayorB"></div>
+                    <div class="Triangulo" id="MenorDerN"></div>
+                </div>
+                <div class="CuadC" id="Segundo">
+                    <div class="Triangulo" id="MenorIzqN2"></div><!--Menor izquierdo, derecho; negro, blanco-->
+                    <div class="TMayor" id="MayorB2"></div>
+                    <div class="Triangulo" id="MenorDerN2"></div>
+                </div>
+                <div id="ContenedorPies">
+                    <div class="Triangulo" id="Pequeño"></div>
+                    <div class="Paralelepipedo" id="Cn2"></div><!--Cabeza normal, invertida-->
+                    <div class="Paralelepipedo" id="Ci2"></div><!--Cabeza normal, invertida-->
+                    <div class="Triangulo" id="Pequeño1"></div>
+                </div>
+                <div class="Casa" id="Cola"></div>
+            </div>
+            <div id="Pd">
+                <div class="Semi-trig" id="stinv"></div><!--Semi objeto con transformacion n invertido x-->
+                <div class="Cuadrado"></div>
+                <div class="Semi-trig" id="SemiInvert2"></div>
+                <div class="Triangulo" id="tv"></div>
+            </div>
+        </div>
+        <div id="AlaDerecha">
+            <div class="Paralelepipedo" id="PS"></div><!--Paralelepipedo 1, 2-->
+            <div class="Paralelepipedo" id="PP"></div>
+            <div class="Paralelepipedo" id="PS"></div>
+            <div class="Paralelepipedo" id="PP"></div>
+        </div>
+    </div>
+
+    <div class="ParalelepipedoMov" onclick="Name = 'Paralelepipedo';empezar()" id="Paralelepipedo"></div>
+    <div class="TranguloColaiv" onclick="Name = 'Triangulo';empezar()" id="Triangulo"></div>
+    <div class="Casamv" onclick="Name = 'Casa';empezar()" id="Casa"></div>
+    <div class="Cuadradomov" onclick="Name = 'Cuadrado';empezar()" id="Cuadrado"></div>
+    <div class="Semi-trigmov" onclick="Name = 'Semi-trig';empezar()" id="Semi-trig"></div>
+    <div class="Trianmov" onclick="Name = 'TMayor'; empezar()" id="TMayor"></div>
+
+    <div id="ContenedorBotones">
+        <button class="Boton" onclick="Mover.ModificarReflexion('x')">Reflejar con respecto a x</button>
+        <button class="Boton" onclick="Mover.ModificarReflexion('y')">Reflejar con respecto a y</button>
+        <button class="Boton" onclick="Mover.ModificarRotacion()">Rotar</button>
+        <button class="Boton" onclick="Verificar(30, 
+            Paralelepipedo + Cuadrados + Triangulos + Casas + SemiTrig + TMayor), 1, 1, 1">Verificar</button>
+        <button class="Boton" onclick="Viajar('Menu')">Regresar al menú</button>
+    </div>
+
+</body>
+<script src="../../Logica y estilos de menús, lecciones y examenes/Logica/Calificacion.js"></script>
+<script src="../Clases.js"></script>
+<script src="../../Logica y estilos de menús, lecciones y examenes/Logica/LogicaLecciones.js"></script>
+<script src="Nivel.js"></script>
+
+</html>

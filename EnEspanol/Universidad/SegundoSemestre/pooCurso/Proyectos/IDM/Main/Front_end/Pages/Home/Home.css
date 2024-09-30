@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(15, 27, 23, 0.6), rgba(4,9,30,0.7)), url(../../Imagenes/HomeP/Banner.png);
+    background-position: center;
+    background-size: 100%dvh 100%dvw;
+}
+
+.homePage {
+
+    font-family: "Nanum Myeongjo", serif;
+    display: grid;
+    height: 100dvh;
+    width: 100dvw;
+    grid-template-rows: 1fr 5fr;
+
+    nav {
+        z-index: 1;
+        grid-area: 1 / 1 / 2 / 2;
+        display: flex;
+        padding: 0.5% 3%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav .fa-solid {
+        display: none;
+    }
+    
+    nav img {
+        width: 10dvw;
+        opacity: 0.9;
+        cursor: pointer;
+    }
+    
+    .home-link {
+        flex: 1;
+        text-align: right;
+    }
+    
+    .home-link ul li {
+        list-style: none;
+        display: inline-block;
+        padding: 8px 12px;
+        position: relative;
+        cursor: pointer;
+    }
+    
+    .home-link ul li a{
+        color: #fff;
+        text-decoration: none;
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+    }
+    
+    .home-link ul li::after {
+        content: '';
+        width: 0%;
+        height: 2px;
+        background: rgba(244, 67, 54, 0.7);
+        display: block;
+        margin: auto;
+        transition: 0.4s;
+    }
+    
+    .home-link ul li:hover::after {
+        width: 100%;
+    }
+
+    .maintext {
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        font-size: 1.5em;
+    }
+
+    .maintext h1, .maintext h2 {  
+        position: relative;
+        top: 25%;
+        margin: 10px 0 40px;
+    }
+
+    @media (max-width: 768px) {
+
+        nav img {
+            width: 15dvw
+        }
+
+        .maintext {
+            font-size: small;
+        }
+    
+        .home-link ul li:hover::after {
+            display: block;
+        }
+    
+        .home-link {
+            height: 1dvw;
+            width: 96dvh;
+            display: flex;
+            position: relative;
+            top: 50%;
+            right: 50%;
+            transform: translate(43%, -50%) rotate(90deg);
+            background: rgba(244, 67, 54, 0.85);
+            z-index: 2;
+            padding: 30px;
+            position: fixed;
+            transition: 1s;
+            height: 20dvw;
+        }
+
+        .home-link ul {
+            transform: rotate(-90deg);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+    
+        nav .fa-solid {
+            display: block;
+            color: #fff;
+            margin: 10px;
+            font-size: 22px;
+            cursor: pointer;
+        }
+
+    }
+
+}

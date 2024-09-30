@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen 1 | Historia</title>
+    <link rel="icon" href="../../../../LogoPágina.png">
+    <link rel="stylesheet" href="../../Logica y estilos de menús, lecciones y examenes/Estilos/EstilosExamen.css">
+</head>
+
+<body>
+    <div id="Instrucciones">
+        <h2>Instrucciones y recomendaciones</h2>
+        - Cuando elije <em style="color:rgb(227, 130, 130);">Continuar al examen</em>, si sale sin complentar el examen,
+        su nota es 0. <br>
+        - Es recomendable leer la leccion del nivel antes de entrar a responder el examen,<br>
+        si no lo ha hecho, elija la opcion <em style="color:rgb(227, 130, 130);">Regresar a la lección</em>. <br>
+        - Trate de no usar herramientas virtuales para hacer copia. <br>
+        - Al ingresar las respuestas en el <em style="color:rgb(71, 176, 176)">input</em>, separe la respuesta de cada
+        pregunta <br>
+        con una coma.
+        <div id="BotonesElección">
+            <button class="Boton" id="BotIzq" onclick="Viajar('Leccion')">Regresar a la lección</button>
+            <button class="Boton" id="BotDer" onclick="Eleccion(1, 1)">Continuar al examen</button>
+        </div>
+    </div>
+
+    <div id="Mostrar">
+        <button class="Boton" id="Regresar" onclick="Viajar('Menu')">Volver al menú</button>
+        <div id="ContenedorTitulo">
+            <h1>Cuestionario</h1>
+        </div>
+
+        <div id="Cuestionario">
+            <div class="ContenedorPrgYRes">
+                <div class="Pregunta">
+                    <!--0, 1, 2, 3, 4, 5, 6, 7, 8, 9; -&#8722; simbolo menos-->
+                    <!--&#1632;, &#1633;, &#1634;, &#1635;, &#1636;, &#1637;, &#1638;, &#1639;, &#1640;, &#1641;-->
+                    1) ¿A qué número corresponde el siguiente dígito?,
+                    <em>&#1639;&#1640;&#1636;&#1635;&#1634;&#1638;</em> :<br><br>
+                    <span class="quad"></span>a. <em>783427</em> <br>
+                    <span class="quad"></span>b. <em>172839</em> <br>
+                    <span class="quad"></span>c. <em>784326</em> <br>
+                    <span class="quad"></span>d. <em>7843260</em> <br>
+                </div>
+            </div>
+            <div class="Line"></div>
+
+            <div class="ContenedorPrgYRes">
+                <div class="Pregunta">
+                    2) En números indo-arábicos, ¿cuánto es <em>(45 &times; 3)/15 - 17</em>?: <br><br>
+                    <span class="quad"></span>a. <em>&#1635;&#1636;</em> <br>
+                    <span class="quad"></span>b. <em>&#8722;&#1640;</em> <br>
+                    <span class="quad"></span>c. <em>&#1632;</em> <br>
+                    <span class="quad"></span>d. <em>&#1640;</em> <br>
+                </div>
+            </div>
+            <div class="Line"></div>
+
+            <div class="ContenedorPrgYRes">
+                <div class="Pregunta">
+                    3) Según el video mostrado en la lección, ¿Cómo se denominan los sistemas númericos como el
+                    indo-arábico?: <br><br>
+                    <span class="quad"></span>a. <em>Posicionales</em> <br>
+                    <span class="quad"></span>b. <em>Cuneiforme </em> <br>
+                    <span class="quad"></span>c. <em>Relaciones</em> <br>
+                    <span class="quad"></span>d. <em>Ninguno de los anteriores</em> <br>
+                </div>
+            </div>
+
+            <div class="Line"></div>
+            <div class="ContenedorPrgYRes">
+                <div class="Pregunta">
+                    4) Según el video mostrado en la lección, ¿apróximandamento cuánto es &radic;13?: <br><br>
+                    <span class="quad"></span>a. <em>3.6060</em> <br>
+                    <span class="quad"></span>b. <em>3.4642</em> <br>
+                    <span class="quad"></span>c. <em>3.6055</em> <br>
+                    <span class="quad"></span>d. <em>4</em> <br>
+                </div>
+            </div>
+            <div class="Line"></div>
+            <div class="ContenedorPrgYRes">
+                <div class="Pregunta">
+                    5) ¿Cómo se denominan los libros sagrados en los que están consignados los saberes matemáticos de
+                    antigua India?: <br><br>
+                    <span class="quad"></span>a. <em>Biblia</em> <br>
+                    <span class="quad"></span>b. <em>Sulvasutras</em> <br>
+                    <span class="quad"></span>c. <em>Tora </em> <br>
+                    <span class="quad"></span>d. <em>Leyes de Manu</em> <br>
+                </div>
+            </div>
+        </div>
+
+        <div id="ContenedorPies">
+            <h1 style="margin-left: 35%; font-size: 100%;">Ingreso de respuestas</h1>
+            <input type="text" placeholder="Respuestas aqui" id="IngresoRespuestas">
+            <button class="Boton" id="BotonTerminar" onclick="Revision(respuestas, Nota, 1, 1)">Terminar Examen</button>
+        </div>
+
+
+        <div class="Ayudas">
+            <div id="Info">
+                Al selecionar cualquiera de las siguientes opciones, perderá 0.25 de su nota:
+            </div>
+            <button id="b1" onclick="Mostrar('SistemaN')">Mostrar Sistema númerico</button>
+            <button id="b2" onclick="Mostrar('sqrt')">Mostrar fórmula de raices cuadradas</button>
+            <img src="../../../../Imagenes/Mundo 1/Nivel 1/NúmerosHindus.jpg" id="Sn"><!--Sistema numerico-->
+            <img src="../../../../Imagenes/Mundo 1/Nivel 1/Sqrt.jpg" id="sqrt">
+        </div>
+    </div>
+
+
+</body>
+<script src="../../Logica y estilos de menús, lecciones y examenes/Logica/Calificacion.js"></script>
+<script src="Examen.js"></script>
+<script src="../../Logica y estilos de menús, lecciones y examenes/Logica/LogicaLecciones.js"></script>
+
+</html>

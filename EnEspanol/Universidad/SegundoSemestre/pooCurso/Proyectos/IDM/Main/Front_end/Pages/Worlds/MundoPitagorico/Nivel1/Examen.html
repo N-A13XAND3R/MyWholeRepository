@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen 1 | Grecia</title>
+    <link rel="icon" href="../../../LogoPágina.png">
+    <link rel="stylesheet" href="../../Logica y estilos de menús, lecciones y examenes/Estilos/EstilosExamen.css">
+</head>
+
+<body>
+    <div id="Instrucciones">
+        <h2>Instrucciones y recomendaciones</h2>
+        - Cuando elije <em style="color:rgb(227, 130, 130);">Continuar al examen</em>, si sale sin complentar el examen,
+        su nota es 0. <br>
+        - Es recomendable leer la leccion del nivel antes de entrar a responder el examen,<br>
+        si no lo ha hecho, elija la opcion <em style="color:rgb(227, 130, 130);">Regresar a la lección</em>. <br>
+        - Trate de no usar herramientas virtuales para hacer copia. <br>
+        - Al ingresar las respuestas en el <em style="color:rgb(71, 176, 176)">input</em>, separe la respuesta de cada
+        pregunta <br>
+        con una coma.
+        <div id="BotonesElección">
+            <button class="Boton" id="BotIzq" onclick="Viajar('Leccion')">Regresar a la lección</button>
+            <button class="Boton" id="BotDer" onclick="Eleccion(2, 1)">Continuar al examen</button>
+        </div>
+    </div>
+
+    <div id="Mostrar">
+        <button class="Boton" id="Regresar" onclick="Viajar('Menu')">Volver al menú</button>
+        <div id="ContenedorTitulo">
+            <h1>Cuestionario</h1>
+        </div>
+
+        <div id="Cuestionario">
+            <div class="ContenedorPrgYRes">
+                <div class="Pregunta">
+                    1) ¿Cuál fue el sistema numérico más destacado de la
+                    antigua Grecia y cuáles eran sus características principales?<br><br>
+                    <span class="quad"></span>a. <i>Numeración alfabética</i> <br>
+                    <span class="quad"></span>b. <i>Numeración romana</i> <br>
+                    <span class="quad"></span>c. <i>Numeración acrofónica</i> <br>
+                    <span class="quad"></span>d. <i>Numeración jónica</i> <br>
+                </div>
+            </div>
+            <div class="Line"></div>
+
+            <div class="ContenedorPrgYRes">
+                <div class="Pregunta">
+                    2) ¿Qué diferencias existen entre la numeración ática
+                    y el sistema jónico en términos de cómo asignan
+                    valores numéricos? <br><br>
+                    <span class="quad"></span>a. <i>Ática: letras griegas / Jónico: símbolos acrofónicos</i> <br>
+                    <span class="quad"></span>b. <i>Ática: números arábigos / Jónico: números romanos</i> <br>
+                    <span class="quad"></span>c. <i>Ática: uso de cifras / Jónico: símbolos acrofónicos</i> <br>
+                    <span class="quad"></span>d. <i>ÁTICA: base 2/ Jónico: base 10</i> <br>
+                </div>
+            </div>
+            <div class="Line"></div>
+
+            <div class="ContenedorPrgYRes">
+                <div class="Pregunta">
+                    3) ¿Qué problemas surgieron en el sistema jónico debido
+                    a la limitación del alfabeto griego clásico y cómo se
+                    resolvieron? <br><br>
+                    <span class="quad"></span>a. <i>No hubo problemas</i> <br>
+                    <span class="quad"></span>b. <i>Usando números arábigos</i> <br>
+                    <span class="quad"></span>c. <i>Copiandose de China</i> <br>
+                    <span class="quad"></span>d. <i>Introducción de letras adicionales</i> <br>
+                </div>
+            </div>
+
+            <div class="Line"></div>
+            <div class="ContenedorPrgYRes">
+                <div class="Pregunta">
+                    4) ¿Cuál fue el impacto del desarrollo de sistemas
+                    numéricos en el avance de las matemáticas griegas
+                    en campos como la geometría, la aritmética y la
+                    trigonometría? <br><br>
+                    <span class="quad"></span>a. <i>Limitaron el progreso</i> <br>
+                    <span class="quad"></span>b. <i>Facilitaron cálculos avanzados</i> <br>
+                    <span class="quad"></span>c. <i>a y b</i> <br>
+                    <span class="quad"></span>d. <i>No tuvieron impacto</i> <br>
+                </div>
+            </div>
+            <div class="Line"></div>
+            <div class="ContenedorPrgYRes">
+                <div class="Pregunta">
+                    5) Además del desarrollo de sistemas numéricos,
+                    ¿qué otros conceptos matemáticos exploraron los
+                    griegos?<br><br>
+                    <span class="quad"></span>a. <i>Teoría de proporciones</i> <br>
+                    <span class="quad"></span>b. <i>Teoría de movimiento</i> <br>
+                    <span class="quad"></span>c. <i>La teória de la recta tangente</i> <br>
+                    <span class="quad"></span>d. <i>No exploraron otros conceptos</i> <br>
+                </div>
+            </div>
+        </div>
+
+        <div id="ContenedorPies">
+            <h1 style="margin-left: 35%; font-size: 100%;">Ingreso de respuestas</h1>
+            <input type="text" placeholder="Respuestas aqui" id="IngresoRespuestas">
+            <button class="Boton" id="BotonTerminar" onclick="Revision(respuestas, Nota, 2, 1)">Terminar Examen</button>
+        </div>
+
+        <!-- Hello world -->
+        <div class="Ayudas">
+            <div id="Info">
+                Al selecionar cualquiera de las siguientes opciones, perderá 0.25 de su nota:
+            </div>
+            <button id="b1" onclick="Mostrar('CT1')">Mostrar ayuda de respuesta de la pregunta 2</button>
+            <button id="b2" onclick="Mostrar('CT2')">Mostrar ayuda respuesta de la pregunta 3</button>
+            <div id="ContendorTexto1">
+                <p>jónico: símbolos acrofónicos</p>
+            </div>
+            <div id="ContendorTexto2">
+                <p>Introdujeron simbolos</p>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</body>
+<script src="Examen.js"></script>
+<script src="../../Logica y estilos de menús, lecciones y examenes/Logica/Calificacion.js"></script>
+<script src="../../Logica y estilos de menús, lecciones y examenes/Logica/LogicaLecciones.js"></script>
+
+</html>

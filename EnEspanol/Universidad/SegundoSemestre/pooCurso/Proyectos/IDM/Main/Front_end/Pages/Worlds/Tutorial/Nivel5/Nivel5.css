@@ -1,0 +1,201 @@
+/*Body*/
+body {
+    font-family: sans-serif;
+}
+
+/*Contenedores*/
+#Muñeco {
+    position: absolute;
+    width: 25vw;
+    height: 25vw;
+    left: 35%;
+    top: 25%;
+}
+#Cabeza {
+    position: absolute;
+    top: 0%;
+    width: 40%;
+    height: 40%;
+    left: 31%;
+    border-radius: 50%;
+    background-color: rgb(245, 231, 226);
+}
+#Cuerpo {
+    position: absolute;
+    left: 21%;
+    top: 40%;
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+    background: rgba(250, 226, 201, 0.548);
+}
+
+/*Objetos de la cabeza*/
+.ojo1 {
+    position: absolute;
+    top: 24%;
+    left: 17%;
+    width: 20%;
+    height: 20%;
+    background: rgb(166, 179, 180);
+}
+.ojo2 {
+    position: absolute;
+    top: 24%;
+    right: 17%;
+    width: 20%;
+    height: 20%;
+    background: rgb(118, 133, 117);
+}
+.boca {
+    width: 60%;
+    height: 60%;
+    clip-path: ellipse(50% 50% at 50% 100%);
+    background: rgb(229, 149, 149);
+    position: absolute;
+    top: 60%;
+    left: 21%;
+    transform: scaleY(-1);
+}
+/*Objetos del cuerpo*/
+.Boton1 {
+    padding:0.3rem 0.4rem;
+    height: fit-content;
+    width: fit-content;
+    position: relative;
+    border-radius: 50%;
+    left: 45%;
+    margin-top: 10%;
+    background: rgb(156, 142, 127);
+}
+.Boton2 {
+    padding:0.3rem 0.4rem;
+    height: fit-content;
+    width: fit-content;
+    position: relative;
+    border-radius: 50%;
+    left: 41%;
+    margin-top: 10%;
+    background: rgb(156, 142, 127);
+}
+.Boton3 {
+    padding:0.3rem 0.4rem;
+    height: fit-content;
+    width: fit-content;
+    position: relative;
+    border-radius: 50%;
+    left: 37%;
+    margin-top: 10%;
+    background: rgb(156, 142, 127);
+}
+
+/*Figuras movibles*/
+/*Cabeza movible y sus atributos*/
+#CabezaMovible {
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    left: 4%;
+    top: 55%;
+    border-radius: 50%;
+    background-color: rgb(245, 212, 200);
+}
+#o1m, #o2m, #bm{
+    background: white;
+}
+/*Cuerpo movible y sus atributos*/
+#CuerpoMov {
+    left: 2%;
+    top: 21%;
+    position: absolute;
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+    background: rgba(250, 194, 138, 0.548);
+}
+#BM1 {
+    background: white;
+}
+/*Elementos adicionales*/
+#ojo1Mov {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 2vw;
+    height: 2vw;
+    background: rgb(78, 164, 170);
+}
+#ojo2Mov {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 2vw;
+    height: 2vw;
+    background: rgb(68, 107, 65);
+}
+#BocaMov {
+    width: 6vw;
+    height: 6vw;
+    clip-path: ellipse(50% 50% at 50% 100%);
+    background: rgb(250, 83, 83);
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    transform: scaleY(-1);
+    border: 0.1em solid black;
+}
+#Boton1Mov {
+    position: absolute;
+    width: 0.9vw;
+    height: 0.9vw;
+    border-radius: 50%;
+    top: 10%;
+    left: 23%;
+    background: rgba(161,130,98);
+
+}
+#Boton2Mov {
+    position: absolute;
+    width: 2.25vw;
+    height: 2.25vw;
+    border-radius: 50%;
+    top: 10%;
+    left: 25%;
+    background: rgba(161,130,98);
+
+}
+#Boton3Mov {
+    position: absolute;
+    width: 3.75vw;
+    height: 3.75vw;
+    border-radius: 50%;
+    top: 10%;
+    left: 30%;
+    background: rgba(161,130,98);
+}
+/*Decoración de botones*/
+#Terminar {
+    top: 10%;
+    left: 45%;
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    padding: 0.35rem 0.4rem;
+    background:#ffffff;
+    border-radius: 0.5em;
+    border: 0.1em solid black;
+}
+#Devolverse {
+    top: 17%;
+    left: 45%;
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    padding: 0.35rem 0.4rem;
+    background:#ffffff;
+    border-radius: 0.5em;
+    border: 0.1em solid black;
+}
+#Devolverse:hover, #Terminar:hover {
+    transform: scale(1.1);
+}

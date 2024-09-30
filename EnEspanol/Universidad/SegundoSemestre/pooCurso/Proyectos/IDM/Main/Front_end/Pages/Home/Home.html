@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="StylesToApplyWithJs.css">
+    <title>Pagina Principal</title>
+    <link rel="icon" href="../../LogoPágina.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section class="homePage">
+        <div class="navegation">
+            <nav>
+                <a><img src="../../LogoPágina.png"></a>
+                <div class="home-link" id="homeLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li class="btnLogin"><div onclick="controler.FillCartSingUp()" style="color: white;">Sign up</div></li>
+                        <li class="btnRegister"><div onclick="controler.FillCartLogIn()" style="color: white;">Log In</div></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+        </div>
+
+        <div class="maintext">
+            <h1>Welcome to IMD</h1>
+            <h2>Interactive Mathemathical Demonstrations</h2>
+        </div>
+    </section>
+    <!-- <h2>Verificando el correo</h2>
+            <img src="../../Imagenes/HomeP/cerrar.png" class="ImgContend" onclick="controler.CloseCart(1)">
+            <h3>En la siguiente linea ingrese el código enviado
+            al correo digitado</h3>
+            <input type="text" class="In" placeholder="Ingrese el código" id="code">
+            <button class="Boton" onclick="regis.VerifyCode()">Verificar cuenta</button> -->
+</body>
+<script src="Home.js"></script>
+<script src="Registro.js"></script>
+<script src="Login.js"></script>
+<script src="Controler.js"></script>
+<script>
+    const controler = new Controler();
+</script>
+</html>

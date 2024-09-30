@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto | Nivel 3</title>
+    <link rel="icon" href="../../../LogoPágina.png">
+    <link rel="stylesheet" href="Nivel.css">
+    <link rel="stylesheet" href="../../Logica y estilos de menús, lecciones y examenes/Estilos/EstilosLeccion.css">
+</head>
+
+<body>
+    <div id="ContenedorBotones">
+        <button class="Boton" onclick="Verificar(25, counter, 2, 3, 3)">Verificar fin</button>
+        <button class="Boton" onclick="mover.cambiarInclinacion(1)">Girar</button>
+        <button class="Boton" onclick="Viajar('Menu')">Volver al menú</button>
+    </div>
+
+    <div class="ContenedorGift" style="transform: scaleX(-1);">
+        <img src="../../../Imagenes/Mundo 2/Nivel3/Demostración.gif" class="GiftContenedor">
+    </div>
+
+    <div id="Rotacion"></div>
+
+    <div id="ContendorPrincipal">
+
+
+        <div id="ContenedorCentral">
+            <div id="Triangulo"></div>
+            <div id="hipotenuza">
+                <div id="ImagenCateto1">
+                    <div class="ContenedorCuadrtios">
+                        <div class="CuadradoPequeño1"></div>
+                        <div class="CuadradoPequeño1"></div>
+                    </div>
+                    <div class="ContenedorCuadrtios">
+                        <div class="CuadradoPequeño1"></div>
+                        <div class="CuadradoPequeño1"></div>
+                    </div>
+                    <div class="ContenedorCuadrtios">
+                        <div class="CuadradoPequeño1"></div>
+                        <div class="CuadradoPequeño1"></div>
+                    </div>
+                    <div class="ContenedorCuadrtios">
+                        <div class="CuadradoPequeño1"></div>
+                        <div class="CuadradoPequeño1"></div>
+                    </div>
+                    <div class="ContenedorCuadrtios">
+                        <div class="CuadradoPequeño1" id="Achatar"></div>
+                    </div>
+                </div>
+                <div id="ImagenCateto2">
+                    <div class="ContenedorCuadrtios">
+                        <div class="CuadradoPequeño1"></div>
+                        <div class="CuadradoPequeño1"></div>
+                        <div class="CuadradoPequeño1"></div>
+                    </div>
+                    <div class="ContenedorCuadrtios">
+                        <div class="CuadradoPequeño1"></div>
+                        <div class="CuadradoPequeño1"></div>
+                        <div class="CuadradoPequeño1"></div>
+                    </div>
+                    <div class="ContenedorCuadrtios">
+                        <div class="CuadradoPequeño1"></div>
+                        <div class="CuadradoPequeño1"></div>
+                        <div class="CuadradoPequeño1"></div>
+                    </div>
+                    <div class="ContenedorCuadrtios">
+                        <div class="CuadradoPequeño1"></div>
+                        <div class="CuadradoPequeño1"></div>
+                        <div class="CuadradoPequeño1"></div>
+                    </div>
+                    <div class="ContenedorCuadrtios">
+                        <div class="CuadradoPequeño1"></div>
+                        <div class="CuadradoPequeño1"></div>
+                        <div class="CuadradoPequeño1"></div>
+                        <div class="CuadradoPequeño1"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="Cateto1">
+            <div class="ContenedorCuadrtios">
+                <div class="CuadradoPequeño" onclick="Jugar(0)"></div>
+                <div class="CuadradoPequeño" onclick="Jugar(1)"></div>
+                <div class="CuadradoPequeño" onclick="Jugar(2)"></div>
+            </div>
+            <div class="ContenedorCuadrtios">
+                <div class="CuadradoPequeño" onclick="Jugar(3)"></div>
+                <div class="CuadradoPequeño" onclick="Jugar(4)"></div>
+                <div class="CuadradoPequeño" onclick="Jugar(5)"></div>
+            </div>
+            <div class="ContenedorCuadrtios">
+                <div class="CuadradoPequeño" onclick="Jugar(6)"></div>
+                <div class="CuadradoPequeño" onclick="Jugar(7)"></div>
+                <div class="CuadradoPequeño" onclick="Jugar(8)"></div>
+            </div>
+        </div>
+        <div id="Cateto2">
+            <div class="ContenedorCuadrtios">
+                <div class="CuadradoPequeño" onclick="Jugar(9)"></div>
+                <div class="CuadradoPequeño" onclick="Jugar(10)"></div>
+                <div class="CuadradoPequeño" onclick="Jugar(11)"></div>
+                <div class="CuadradoPequeño" onclick="Jugar(12)"></div>
+            </div>
+            <div class="ContenedorCuadrtios">
+                <div class="CuadradoPequeño" onclick="Jugar(13)"></div>
+                <div class="CuadradoPequeño" onclick="Jugar(14)"></div>
+                <div class="CuadradoPequeño" onclick="Jugar(15)"></div>
+                <div class="CuadradoPequeño" onclick="Jugar(16)"></div>
+            </div>
+            <div class="ContenedorCuadrtios">
+                <div class="CuadradoPequeño" onclick="Jugar(17)"></div>
+                <div class="CuadradoPequeño" onclick="Jugar(18)"></div>
+                <div class="CuadradoPequeño" onclick="Jugar(19)"></div>
+                <div class="CuadradoPequeño" onclick="Jugar(20)"></div>
+            </div>
+            <div class="ContenedorCuadrtios">
+                <div class="CuadradoPequeño" onclick="Jugar(21)"></div>
+                <div class="CuadradoPequeño" onclick="Jugar(22)"></div>
+                <div class="CuadradoPequeño" onclick="Jugar(23)"></div>
+                <div class="CuadradoPequeño" onclick="Jugar(24)"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../../Logica y estilos de menús, lecciones y examenes/Logica/Calificacion.js"></script>
+<script src="../../Logica y estilos de menús, lecciones y examenes/Logica/LogicaLecciones.js"></script>
+<script src="Mover.js"></script>
+<script src="Nivel.js"></script>
+
+</html>

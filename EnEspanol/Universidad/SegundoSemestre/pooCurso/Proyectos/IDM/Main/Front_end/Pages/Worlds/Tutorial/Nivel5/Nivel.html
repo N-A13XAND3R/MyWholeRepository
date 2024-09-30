@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nivel 5 | Tutorial</title>
+    <link rel="icon" href="../../../LogoPágina.png" type="image/x-icon">
+    <link rel="stylesheet" href="Nivel5.css">
+</head>
+<body>
+    <!--Dibujando al muñequito-->
+    <div id="Muñeco">
+        <div id="Cabeza">
+            <div class="ojo1" id="ojo1"></div>
+            <div class="ojo2" id="ojo2"></div>
+            <div class="boca" id="boca"></div>
+        </div>
+        <div id="Cuerpo">
+            <div class="Boton1" id="Boton1"></div>
+            <div class="Boton2" id="Boton2"></div>
+            <div class="Boton3" id="Boton3"></div>
+        </div>
+    </div>
+
+    <!--Figuras movibles-->
+    <div id="CabezaMovible">
+        <div class="ojo1" id="o1m"></div><!--onm: ojo n movible-->
+        <div class="ojo2" id="o2m"></div>
+        <div class="boca" id="bm"></div><!--Boca movible-->
+    </div>
+    <div id="CuerpoMov">
+        <div class="Boton1" id="BM1"></div><!--Boton movible n-->
+        <div class="Boton2" id="BM1"></div>
+        <div class="Boton3" id="BM1"></div>
+    </div>
+    <div id="ojo1Mov"></div>
+    <div id="ojo2Mov"></div>
+    <div id="BocaMov"></div>
+    
+    <div id="Boton1Mov"></div>
+    <div id="Boton2Mov"></div>
+    <div id="Boton3Mov"></div>
+
+    <!--Botones para interactuar con toda la página y terminar-->
+    <button id="Terminar" onclick="VerificarFinal()">Terminar</button>
+    <button id="Devolverse" onclick="Irse()">Regresar a la página principal</button>
+</body>
+<script src="Nivel5.js"></script>
+</html>

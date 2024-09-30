@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demostración 1 | Pitágoras</title>
+    <link rel="icon" href="../../../LogoPágina.png">
+    <link rel="stylesheet" href="Nivel.css">
+    <link rel="stylesheet" href="../../Logica y estilos de menús, lecciones y examenes/Estilos/EstilosLeccion.css">
+</head>
+
+<body>
+    <div id="ContenedorBotones">
+        <button style="font-size: 1vw;" class="Boton" onclick="move.Rotate(90)">Rotar a la derecha</button>
+        <button style="font-size: 1vw;" class="Boton" onclick="move.Rotate(-90)">Rotar a la izquierda</button>
+        <button class="Boton" onclick="Verificar(4, counter, 2, 1, 1)">Verificar</button>
+        <button class="Boton" onclick="Viajar('Menu')">Regresar al menú</button>
+    </div>
+
+    <div class="ContenedorGift" style="transform: scaleX(-1);">
+        <img src="../../../Imagenes/Mundo 2/Nivel1/Demostración1Pitagoras.gif" class="GiftContenedor">
+    </div>
+
+    <!--
+    <div id="TextoDemostración">
+        <i>Considere un cuadrado de 21cm de lado y construya 4 triangulos,
+            cada uno con una base de 12cm y una altura de 9cm, dentro del cuadrado
+            como se muestra en la figura a la izquierda.</i><br><br>
+    
+        <i>Entonces, el área del cuadrado es 441cm<sup>2</sup> y el área de los
+            cuatro triángulos es 216cm<sup>2</sup> (ya que cada triangulo tiene
+            54cm<sup>2</sup> de área). Por lo tanto, el área del cuadrado interno
+            es de 225cm<sup>2</sup> (441 - 216).</i><br><br>
+    
+        <i>Observe que la base de este cuadrado es la hipotenusa del triángulo
+            con base de 12cm y altura de 9cm. Dado que el área es 225cm<sup>2</sup>,
+            la base del cuadrado mide 15cm, lo cual coincide con la hipotenusa de
+            cada triángulo construido.</i>
+    </div>
+    -->
+    <div id="Demostración">
+
+        <div class="Cuadrado">
+            <div class="TrianguloCuadrado1" id="T1" onclick="CreateObject('T1',0)"></div>
+            <div class="TrianguloCuadrado1" id="T2" onclick="CreateObject('T2',90)"></div>
+            <div class="TrianguloCuadrado1" id="T3" onclick="CreateObject('T3',180)"></div>
+            <div class="TrianguloCuadrado1" id="T4" onclick="CreateObject('T4',270)"></div>
+        </div>
+
+        <div class="Cuadrado">
+            <div id="Caja1">
+                <div class="TrianguloCuadrado2" id="D1"></div>
+                <div class="TrianguloCuadrado2" id="D2"></div>
+            </div>
+            <div id="Caja2">
+                <div class="TrianguloCuadrado2" id="D3"></div>
+                <div class="TrianguloCuadrado2" id="D4"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../../Logica y estilos de menús, lecciones y examenes/Logica/Calificacion.js"></script>
+<script src="Mover.js"></script>
+<script src="Nivel.js"></script>
+<script src="../../Logica y estilos de menús, lecciones y examenes/Logica/LogicaLecciones.js"></script>
+
+</html>

@@ -1,0 +1,272 @@
+/*Interfaces para crear objetos*/
+.Paralelepipedo {
+    background: beige;
+    width: 25%;
+    height: 25%;
+    clip-path: polygon(0 100%, 100% 75%, 100% 0, 0 25%);
+}
+/*Modificaciones a elmentos Para1*/
+#PP {
+    background: rgb(194, 185, 185);
+    margin-top: 90%;
+    transform: scaleX(-1);
+}
+#PS {
+    background: rgb(225, 225, 221);
+    margin-top: 90%;
+}
+#Cn, #Ci, #Cn2, #Ci2 {
+    position: absolute;
+    width: 4.2272vw;
+    height: 9.9075vw;
+}
+#Cn, #Cn2 {
+    background: rgb(225, 225, 221)
+}#Ci, #Ci2 {
+    background: rgb(194, 185, 185);
+}
+#Ci, #Ci2 {
+    transform: scaleX(-1);
+    right: 0;
+}
+/*Fin*/
+.Semi-trig {
+    margin-top: 58%;
+    width: 100%;
+    height: 28%;
+    background: rgb(106, 106, 108);
+    clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 75%);
+}
+/*Elementos de Semi-trig invertidos*/
+#SemiInvert, #SemiInvert2 {
+    position: relative;
+    margin-top: 0;
+    transform: scaleY(-1);
+}
+#SemiInvert2 {
+    transform: scale(-1);
+}
+.Cuadrado {
+    width: 100%;
+    height: 30%;
+    background-color: rgb(199, 202, 202);
+}
+.Triangulo {
+    width: 100%;
+    height: 35%;
+    clip-path: polygon(0 100%, 100% 100%, 100% 0);
+    background: rgb(232, 225, 225);
+}
+/*Interfaces del centro*/
+.CuadC {
+    position: absolute;
+    width: 100%;
+    height: 20.5%;
+}
+.TMayor {
+    position: absolute;
+    margin-top: 0;
+    height: 100%;
+    width: 100%;
+    clip-path: polygon(0 100%, 50% 0, 100% 100%);
+    background: rgb(232, 225, 225);;
+}
+/*Interfaces movibles*/
+.Para1Mov {
+    position: absolute;
+    width: 3.2vw;
+    height: 7.5vw;
+    clip-path: polygon(0 100%, 100% 75%, 100% 0, 0 25%);
+    background: rgb(251, 111, 111);
+}
+.TranguloCola {
+    position: absolute;
+    width: 50%;
+    height: 25%;
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+    background: rgb(176, 174, 174);
+}
+/*Construyendo el halcón*/
+#Halcón {
+    position: absolute;
+    top: 10%;
+    left: 12%;
+    display: flex;
+    width: 50vw;
+    height: 30vw;
+}
+
+#Cuerpo {
+    display: flex;
+    width: 60%;
+    height: 100%;
+}
+
+#AlaDerecha, #AlaIzquierda {
+    display: flex;
+    width: 30%;
+    height: 100%;
+}
+/*Partes del cuerpo*/
+#Pi, #Pc, #Pd {
+    position: relative;
+    width: 33.33%;
+    height: 100%;
+}
+/*Invertir con respecto a x*/
+#stinv, #tv {
+    transform: scaleX(-1);
+}
+#sti1v {
+    transform: scale(-1);
+}
+/*Creación del centro*/
+#ContenedorCabeza {
+    width: 8.4544vw;
+    position: relative;
+    display: flex;
+    height: 9.9075vw;
+}
+.Casa {
+    position: absolute;
+    top: 24.7%;
+    width: 8.4vw;
+    height: 7.3vw;
+    background: rgb(146, 146, 148);
+    clip-path: polygon(0 100%, 0 33%, 50.5% 0, 100% 33%, 100% 100%);
+}
+#Cola {
+    top: 114.7%;
+}
+#Primero {
+    top: 48.9%;
+}
+#Segundo {
+    top: 69.4%;
+}
+#MenorN, #MayorN {
+    background: rgb(176, 174, 174);
+}
+#MayorB2 {
+    transform: scaleY(-1);
+    background: rgb(146, 146, 148);;
+}
+#MenorIzqN, #MenorDerN {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: rgb(176, 174, 174);
+    transform: scaleX(-1) scaleY(-1);
+}
+#MenorDerN {
+    right: 0;
+    transform: scaleX(1) scaleY(-1);
+}
+#MenorIzqN2, #MenorDerN2 {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    bottom: 0;
+    transform: scaleX(-1);
+}
+#MenorDerN2 {
+    right: 0;
+    transform: scaleX(1);
+}
+#ContenedorPies {
+    width: 8.4544vw;
+    height: 9.9075vw;
+    position: absolute;
+    display: flex;
+    top: 89.9%;
+}
+#Pequeño, #Pequeño1 {
+    top: 0;
+    position: absolute;
+    height: 25%;
+    width: 50%;
+    transform: scale(-1);
+    background: rgb(176, 174, 174);
+}
+#Pequeño1 {
+    right: 0;
+    transform: scaleY(-1) scaleX(1);
+}
+/*Clases de ejemplo*/
+.ParalelepipedoMov {
+    top: 10%;
+    right: 25%;
+    position: absolute;
+    width: 5vw;
+    height: 8vw;
+    clip-path: polygon(0 100%, 100% 75%, 100% 0, 0 25%);
+    background: rgb(0, 0, 0);
+}
+.TranguloColaiv {
+    top: 45%;
+    right: 15%;
+    position: absolute;
+    width: 9vw;
+    height: 10vw;
+    clip-path: polygon(100% 0, 100% 100%, 0 100%);
+    background: rgb(0,0,0);
+}
+.Casamv {
+    top: 10%;
+    right: 5%;
+    position: absolute;
+    width: 8.4vw;
+    height: 7.3vw;
+    background: rgb(0, 0, 0);
+    clip-path: polygon(0 100%, 0 33%, 50.5% 0, 100% 33%, 100% 100%);
+}
+.Cuadradomov {
+    top: 45%;
+    right: 25%;
+    position: absolute;
+    width: 8.4vw;
+    height: 9vw;
+    background-color: rgb(0, 0, 0);
+}
+.Semi-trigmov {
+    top: 15%;
+    right: 15%;
+    position: absolute;
+    width: 8.4vw;
+    height: 8.4vw;
+    background-color: rgb(0, 0, 0);
+    clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 75%);
+}
+.Trianmov {
+    top: 45%;
+    right: 5%;
+    position: absolute;
+    width: 8vw;
+    height: 8vw;
+    clip-path: polygon(0 100%, 50% 0, 100% 100%);
+    background: rgb(0,0,0);
+}
+
+/*Clase y configuracion de botones*/
+#ContenedorBotones {
+    width: 20vw;
+    height: 15vw;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+.Boton {
+    margin:0.5vw;
+    padding:0.3rem 0.4rem;
+    height: fit-content;
+    width: fit-content;
+    padding: 0.35rem 0.4rem;
+    background:#ffffff;
+    border: 0.1em solid black;
+    border-radius: 0.5em;
+}
+.Boton:hover {
+    transform: scale(1.1);
+    height: fit-content;
+    width: fit-content;
+}
