@@ -1,0 +1,91 @@
+/* Set height of body and the document to 100% to enable "full page tabs" */
+html {
+  height: 100%;
+  margin: 0;
+  font-family: system-ui;
+}
+body {
+  font-family: system-ui;
+  background: #000000;
+  text-align: center;
+  color: #fff8dc;
+  justify-content:center;
+}
+
+*{
+    margin: 50;
+    padding: 50;
+  
+}
+center{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+    
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+
+/* Style tab links */
+.tablink {
+  background-color: #000;
+  color: #fff8dc;
+  float: left;
+  border: 1px solid #444;
+  outline: none;
+  cursor: pointer;
+  padding: 4px 2px;
+  font-size: 16px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #fff8dc;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: #fff8dc;
+  display: block;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+
+#Home {background-color: black;}
+#News {background-color: black;}
